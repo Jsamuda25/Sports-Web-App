@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: aqua;
+}
 
 header{
   background-color: #262626;
@@ -54,16 +57,16 @@ a{
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  /* -webkit-transition: all 0.3s ease-in-out; */
-  /* transition: all 0.3s ease-in-out; */
+  -webkit-transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out; 
   background-color: white;
 }
 
-@media(max-width:768px){
+@media(max-width:508px){
   .hamburger{
     display: block;
   }
-/* 
+
   .hamburger.active .bar:nth-child(2){
     opacity: 0;
   }
@@ -78,8 +81,7 @@ a{
 
   .nav-menu{
     position: fixed;
-  } */
-
+  } 
 
 
 }

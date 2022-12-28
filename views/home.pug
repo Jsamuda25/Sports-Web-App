@@ -5,25 +5,43 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Three In The Key
-        style.
-            body {
-                background-color: #5271FF;
-            }
+        link(rel='stylesheet', href='/stylesheets/home.css')
     body
         header
-            ul 
-                li 
-                    a(href="/trivia") Trivia
-                li 
-                    a(href="/lineup") Lineup Match
-                li 
-                    a(href="/teammate") Teammate Checker
+            <nav class="navbar">
+                <a href="#" class="nav-branding">Three In the Key</a> <!-- Insert link here-->
+        
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a> <!--Insert link here-->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a> <!--Insert link here-->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a> <!--Insert link here-->
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            
+            //- ul 
+            //-     li 
+            //-         a(href="/trivia") Trivia
+            //-     li 
+            //-         a(href="/lineup") Lineup Match
+            //-     li 
+            //-         a(href="/teammate") Teammate Checker
 
-            h1 Three In The Key
+            //- h1 Three In The Key
 
-            //- Create a link to take you back to the home page
-            a(href="/") 
-                img(src="", alt="Home Page" width="30px" height="30px")
+            //- //- Create a link to take you back to the home page
+            //- a(href="/") 
+            //-     img(src="", alt="Home Page" width="30px" height="30px")
         
         a(href="/trivia") 
             h3 Trivia 
