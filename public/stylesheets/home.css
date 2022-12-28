@@ -5,9 +5,25 @@
 }
 
 h3{
-  color: black
+  color: black;
+  text-align: center;
 }
 
+p{
+  text-align: center;
+}
+
+#mj{
+  height: 500px;
+  float: right;
+  margin-right: 5px;
+}
+
+/* #lj{
+  height: 500px;
+  float: left;
+  margin-left: 5px;
+} */
 .boxes{
   margin: 150px;
   display: flex;
