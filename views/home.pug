@@ -5,38 +5,70 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Three In The Key
-        style.
-            body {
-                background-color: #5271FF;
-            }
+        link(rel='stylesheet', href='/stylesheets/home.css')
+        script(src='/javascripts/homeClient.js')
     body
         header
-            ul 
-                li 
-                    a(href="/trivia") Trivia
-                li 
-                    a(href="/lineup") Lineup Match
-                li 
-                    a(href="/teammate") Teammate Checker
-
-            h1 Three In The Key
-
-            //- Create a link to take you back to the home page
-            a(href="/") 
-                img(src="", alt="Home Page" width="30px" height="30px")
+            <nav class="navbar">
+                <a href="#" class="nav-branding">Three In the Key</a> <!-- Insert link here-->
         
-        a(href="/trivia") 
-            h3 Trivia 
-        p Create a lineup that is most similar to the daily lineup.
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a> <!--Insert link here-->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a> <!--Insert link here-->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a> <!--Insert link here-->
+                    </li>
+                </ul>
+                <div class="burger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            
+            //- ul 
+            //-     li 
+            //-         a(href="/trivia") Trivia
+            //-     li 
+            //-         a(href="/lineup") Lineup Match
+            //-     li 
+            //-         a(href="/teammate") Teammate Checker
 
-        a(href="/lineup") 
-            h3 Lineup Match
-        p Create a lineup and we will show you the most similar starting lineup to ever play.
+            //- h1 Three In The Key
 
-        a(href="/teammate") 
-            h3 Teammate Checker
-        p Checks to see if your chosen players ever shared the court together in a game.
+            //- //- Create a link to take you back to the home page
+            //- a(href="/") 
+            //-     img(src="", alt="Home Page" width="30px" height="30px")
         
+        div(class="boxes")
+            div(id="box")
+                a(href="/trivia") 
+                    h3 Trivia 
+                    br
+                p Create a lineup that is most similar to the daily lineup.
+
+            div(id="box")
+                a(href="/lineup") 
+                    h3 Lineup Match
+                    br
+                p Create a lineup and we will show you the most similar starting lineup to ever play.
+
+            div(id="box")
+                a(href="/teammate") 
+                    h3 Teammate Checker
+                    br
+                p Checks to see if your chosen players ever shared the court together in a game.
+
+        img(src="/images/michael-jordan.png", id="mj")
+        //- img(src="/images/basketball-147657.svg", id="lj")
+
+
+
+            
         
 
 
