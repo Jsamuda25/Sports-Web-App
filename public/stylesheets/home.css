@@ -9,6 +9,10 @@ h3{
   text-align: center;
 }
 
+h3.option:hover {
+  color: dodgerblue;
+}
+
 p{
   text-align: center;
 }

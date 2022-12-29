@@ -6,6 +6,8 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Three In The Key
         link(rel='stylesheet', href='/stylesheets/home.css')
+        script(src='/javascripts/navbar.js' defer)  
+        //- defer tag just makes sure the page loads before the script runs
     body
         header
             include navbar.pug
@@ -13,26 +15,24 @@ html(lang="en")
         div(class="boxes")
             div(id="box")
                 a(href="/trivia") 
-                    h3 Trivia 
-                    br
+                    h3.option Trivia
+                br
                 p Create a lineup that is most similar to the daily lineup.
 
             div(id="box")
                 a(href="/lineup") 
-                    h3 Lineup Match
-                    br
+                    h3.option Lineup Match
+                br
                 p Create a lineup and we will show you the most similar starting lineup to ever play.
 
             div(id="box")
-                a(href="/teammate") 
-                    h3 Teammate Checker
-                    br
+                a(href="/teammates") 
+                    h3.option Teammate Checker
+                br
                 p Checks to see if your chosen players ever shared the court together in a game.
 
         img(src="/images/michael-jordan.png", id="mj")
         img(src="/images/cavs-bron.png", id="lj")
-
-        script(src='/javascripts/homeClient.js')
 
 
             

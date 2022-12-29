@@ -15,6 +15,9 @@ const teammateRoutes = require('./routes/teammates');
 app.get('/', (req, res) => {
    res.render('home');
 });
+app.use('/trivia', triviaRoutes);
+app.use('/lineup', lineupRoutes);
+app.use('/teammates', teammateRoutes);
 
 
 // Start the server
@@ -29,6 +32,7 @@ const uri =
   "mongodb://localhost:27017";
 
 const client = new MongoClient(uri);
+app.locals.client = client;  // access the db client in any route using 'req.app.locals.client'
 
 async function run() {
   try {
