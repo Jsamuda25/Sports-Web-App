@@ -2,14 +2,22 @@ const express = require('express');
 const app = express();
 
 app.set("view engine", "pug");
+
 app.use(express.json());
 app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
+
+// Routes
+const triviaRoutes = require('./routes/trivia');
+const lineupRoutes = require('./routes/lineup');
+const teammateRoutes = require('./routes/teammates');
+
 app.get('/', (req, res) => {
    res.render('home');
 });
 
-//test123
+
+// Start the server
 app.listen(3000);
 console.log("Listening on port 3000, Link: http://localhost:3000");
 
@@ -18,7 +26,7 @@ const { MongoClient } = require("mongodb");
 
 // Replace the uri string with your connection string.
 const uri =
-  "mongodb+srv://adminUser:123@cluster0.tililof.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb://localhost:27017";
 
 const client = new MongoClient(uri);
 
@@ -37,4 +45,4 @@ async function run() {
     await client.close();
   }
 }
-run().catch(console.dir);
+// run().catch(console.dir);
