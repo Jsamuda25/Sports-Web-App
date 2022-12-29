@@ -81,11 +81,6 @@ a{
   color: dodgerblue;
 }
 
-.burger{
-  
-  /* display: none; */
-  cursor: pointer;
-}
 
 .bar{
   display: block;
@@ -97,18 +92,13 @@ a{
   background-color: white;
 }
 
-@media(min-width:768.1px){
-  .nav-menu{
-    padding-right: 20px;
-  }
-  .burger{
-    display: none;
-  }
-}
 
-@media(max-width:768px){
   .burger{
     display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+
   }
 
   .burger.active .bar:nth-child(2){
@@ -126,7 +116,8 @@ a{
   .nav-menu{
     position: fixed;
     Left: -100%;
-    top: 70px;
+    padding-top: 70px;
+    
     gap:0;
     flex-direction: column;
     background-color: #262626;
@@ -143,4 +134,4 @@ a{
   .nav-menu.active{
     Left:0;
   }
-}
+
