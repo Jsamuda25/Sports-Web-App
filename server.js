@@ -36,11 +36,11 @@ app.locals.client = client;  // access the db client in any route using 'req.app
 
 async function run() {
   try {
-    const database = client.db('sample_mflix');
-    const movies = database.collection('movies');
+    const database = client.db('hawks');
+    const movies = database.collection('test');
 
     // Query for a movie that has the title 'Back to the Future'
-    const query = { title: 'Back to the Future' };
+    const query = { firstname: 'Lou' };
     const movie = await movies.findOne(query);
 
     console.log(movie);
