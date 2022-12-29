@@ -57,7 +57,7 @@ a{
   padding: 0 24px;
 }
 
- .nav-menu{
+.nav-menu{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,6 +90,15 @@ a{
   -webkit-transition: all 0.3s ease-in-out; 
   transition: all 0.3s ease-in-out; 
   background-color: white;
+}
+
+@media(min-width:768.1px){
+  .nav-menu{
+    padding-right: 20px;
+  }
+  .burger{
+    display: none;
+  }
 }
 
 @media(max-width:768px){
