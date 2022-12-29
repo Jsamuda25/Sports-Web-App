@@ -19,11 +19,11 @@ p{
   margin-right: 5px;
 }
 
-/* #lj{
+#lj{
   height: 500px;
   float: left;
   margin-left: 5px;
-} */
+} 
 .boxes{
   margin: 150px;
   display: flex;
@@ -38,6 +38,7 @@ p{
 }
 header{
   background-color: #262626;
+  
 }
 
 li{
