@@ -49423,7 +49423,8156 @@ let player_api_data =
       }
     ]
 };
-let game_api_data = 
+let game_api_data = {
+  "get": "games/",
+  "parameters": {
+    "season": "2020",
+    "team": "1"
+  },
+  "errors": [],
+  "results": 97,
+  "response": [
+    {
+      "id": 7508,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2020-12-20T01:00:00.000Z",
+        "end": "2020-12-20T03:46:00.000Z",
+        "duration": "2:33"
+      },
+      "stage": 1,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "FedExForum",
+        "city": "Memphis",
+        "state": "TN",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 19,
+          "name": "Memphis Grizzlies",
+          "nickname": "Grizzlies",
+          "code": "MEM",
+          "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Memphis_Grizzlies.svg/1200px-Memphis_Grizzlies.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 2,
+          "loss": 2,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "17",
+            "34",
+            "30",
+            "36"
+          ],
+          "points": 117
+        },
+        "home": {
+          "win": 3,
+          "loss": 1,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "29",
+            "32",
+            "30",
+            "25"
+          ],
+          "points": 116
+        }
+      },
+      "officials": [
+        "Michael Smith",
+        "Matt Boland",
+        "Nate Green"
+      ],
+      "timesTied": 3,
+      "leadChanges": 1,
+      "nugget": null
+    },
+    {
+      "id": 7523,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2020-12-24T01:00:00.000Z",
+        "end": "2020-12-24T03:23:00.000Z",
+        "duration": "2:14"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "United Center",
+        "city": "Chicago",
+        "state": "IL",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 6,
+          "name": "Chicago Bulls",
+          "nickname": "Bulls",
+          "code": "CHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d1/Bulls_de_Chicago_logo.svg/1200px-Bulls_de_Chicago_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 1,
+          "loss": 0,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "42",
+            "41",
+            "28",
+            "13"
+          ],
+          "points": 124
+        },
+        "home": {
+          "win": 0,
+          "loss": 1,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "29",
+            "30",
+            "20",
+            "25"
+          ],
+          "points": 104
+        }
+      },
+      "officials": [
+        "Marc Davis",
+        "Marat Kogut",
+        "Simone Jelks"
+      ],
+      "timesTied": 1,
+      "leadChanges": 1,
+      "nugget": null
+    },
+    {
+      "id": 7529,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2020-12-26T22:00:00.000Z",
+        "end": "2020-12-27T00:28:00.000Z",
+        "duration": "2:18"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "FedExForum",
+        "city": "Memphis",
+        "state": "TN",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 19,
+          "name": "Memphis Grizzlies",
+          "nickname": "Grizzlies",
+          "code": "MEM",
+          "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Memphis_Grizzlies.svg/1200px-Memphis_Grizzlies.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 2,
+          "loss": 0,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "27",
+            "31",
+            "29",
+            "35"
+          ],
+          "points": 122
+        },
+        "home": {
+          "win": 0,
+          "loss": 2,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "22",
+            "34",
+            "32",
+            "24"
+          ],
+          "points": 112
+        }
+      },
+      "officials": [
+        "James Capers",
+        "Michael Smith",
+        "Robert Hussey"
+      ],
+      "timesTied": 7,
+      "leadChanges": 17,
+      "nugget": null
+    },
+    {
+      "id": 7703,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-17T03:00:00.000Z",
+        "end": "2021-01-17T05:29:00.000Z",
+        "duration": "2:19"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Moda Center",
+        "city": "Portland",
+        "state": "OR",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 29,
+          "name": "Portland Trail Blazers",
+          "nickname": "Trail Blazers",
+          "code": "POR",
+          "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Portland_Trail_Blazers_logo.svg/1200px-Portland_Trail_Blazers_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 5,
+          "loss": 7,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "38",
+            "28",
+            "20",
+            "20"
+          ],
+          "points": 106
+        },
+        "home": {
+          "win": 8,
+          "loss": 5,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "34",
+            "25",
+            "27",
+            "26"
+          ],
+          "points": 112
+        }
+      },
+      "officials": [
+        "Brian Forte",
+        "Scott Twardoski",
+        "Evan Scott"
+      ],
+      "timesTied": 7,
+      "leadChanges": 8,
+      "nugget": null
+    },
+    {
+      "id": 7713,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-18T19:30:00.000Z",
+        "end": "2021-01-18T22:04:00.000Z",
+        "duration": "2:13"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 22,
+          "name": "Minnesota Timberwolves",
+          "nickname": "Timberwolves",
+          "code": "MIN",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/Timberwolves_du_Minnesota_logo_2017.png/200px-Timberwolves_du_Minnesota_logo_2017.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 3,
+          "loss": 9,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "25",
+            "26",
+            "20",
+            "26"
+          ],
+          "points": 97
+        },
+        "home": {
+          "win": 6,
+          "loss": 7,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "29",
+            "29",
+            "20",
+            "30"
+          ],
+          "points": 108
+        }
+      },
+      "officials": [
+        "Ed Malloy",
+        "Karl Lane",
+        "Suyash Mehta"
+      ],
+      "timesTied": 5,
+      "leadChanges": 1,
+      "nugget": null
+    },
+    {
+      "id": 7727,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-21T00:30:00.000Z",
+        "end": "2021-01-21T03:13:00.000Z",
+        "duration": "2:33"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 5,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 10,
+          "name": "Detroit Pistons",
+          "nickname": "Pistons",
+          "code": "DET",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Detroit_Pistons_primary_logo_2017.png/150px-Detroit_Pistons_primary_logo_2017.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 3,
+          "loss": 11,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "31",
+            "21",
+            "40",
+            "14",
+            "9"
+          ],
+          "points": 115
+        },
+        "home": {
+          "win": 7,
+          "loss": 7,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "29",
+            "16",
+            "33",
+            "28",
+            "17"
+          ],
+          "points": 123
+        }
+      },
+      "officials": [
+        "Zach Zarba",
+        "Kevin Cutler",
+        "CJ Washington"
+      ],
+      "timesTied": 14,
+      "leadChanges": 12,
+      "nugget": null
+    },
+    {
+      "id": 7744,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-23T01:00:00.000Z",
+        "end": "2021-01-23T03:13:00.000Z",
+        "duration": "2:02"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Target Center",
+        "city": "Minneapolis",
+        "state": "MN",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 22,
+          "name": "Minnesota Timberwolves",
+          "nickname": "Timberwolves",
+          "code": "MIN",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d9/Timberwolves_du_Minnesota_logo_2017.png/200px-Timberwolves_du_Minnesota_logo_2017.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 8,
+          "loss": 7,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "25",
+            "37",
+            "30",
+            "24"
+          ],
+          "points": 116
+        },
+        "home": {
+          "win": 3,
+          "loss": 11,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "19",
+            "24",
+            "24",
+            "31"
+          ],
+          "points": 98
+        }
+      },
+      "officials": [
+        "Ken Mauer",
+        "Aaron Smith",
+        "Andy Nagy"
+      ],
+      "timesTied": 2,
+      "leadChanges": 8,
+      "nugget": null
+    },
+    {
+      "id": 7762,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-25T01:00:00.000Z",
+        "end": "2021-01-25T03:24:00.000Z",
+        "duration": "2:12"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Fiserv Forum",
+        "city": "Milwaukee",
+        "state": "WI",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 21,
+          "name": "Milwaukee Bucks",
+          "nickname": "Bucks",
+          "code": "MIL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 8,
+          "loss": 8,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "15",
+            "32",
+            "36",
+            "32"
+          ],
+          "points": 115
+        },
+        "home": {
+          "win": 10,
+          "loss": 6,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "32",
+            "34",
+            "28",
+            "35"
+          ],
+          "points": 129
+        }
+      },
+      "officials": [
+        "Brett Nansel",
+        "Ben Taylor",
+        "Ray Acosta"
+      ],
+      "timesTied": 1,
+      "leadChanges": 0,
+      "nugget": null
+    },
+    {
+      "id": 7776,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-27T00:30:00.000Z",
+        "end": "2021-01-27T02:59:00.000Z",
+        "duration": "2:11"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 16,
+          "name": "LA Clippers",
+          "nickname": "Clippers",
+          "code": "LAC",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/d/d6/Los_Angeles_Clippers_logo_2010.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 13,
+          "loss": 5,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "21",
+            "27",
+            "22",
+            "29"
+          ],
+          "points": 99
+        },
+        "home": {
+          "win": 9,
+          "loss": 8,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "22",
+            "21",
+            "33",
+            "32"
+          ],
+          "points": 108
+        }
+      },
+      "officials": [
+        "Sean Corbin",
+        "Scott Wall",
+        "John Goble"
+      ],
+      "timesTied": 11,
+      "leadChanges": 15,
+      "nugget": null
+    },
+    {
+      "id": 7782,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-28T00:30:00.000Z",
+        "end": "2021-01-28T03:13:00.000Z",
+        "duration": "2:33"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 5,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 4,
+          "name": "Brooklyn Nets",
+          "nickname": "Nets",
+          "code": "BKN",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/130px-Brooklyn_Nets_newlogo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 12,
+          "loss": 8,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "26",
+            "29",
+            "28",
+            "33",
+            "16"
+          ],
+          "points": 132
+        },
+        "home": {
+          "win": 9,
+          "loss": 9,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "27",
+            "28",
+            "32",
+            "29",
+            "12"
+          ],
+          "points": 128
+        }
+      },
+      "officials": [
+        "John Goble",
+        "Marat Kogut",
+        "John Conley"
+      ],
+      "timesTied": 15,
+      "leadChanges": 21,
+      "nugget": null
+    },
+    {
+      "id": 7798,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-30T00:00:00.000Z",
+        "end": "2021-01-30T02:31:00.000Z",
+        "duration": "2:20"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Capital One Arena",
+        "city": "Washington",
+        "state": "DC",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 41,
+          "name": "Washington Wizards",
+          "nickname": "Wizards",
+          "code": "WAS",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/archive/d/d6/20161212034849%21Wizards2015.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 10,
+          "loss": 9,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "31",
+            "30",
+            "28",
+            "27"
+          ],
+          "points": 116
+        },
+        "home": {
+          "win": 3,
+          "loss": 12,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "22",
+            "28",
+            "21",
+            "29"
+          ],
+          "points": 100
+        }
+      },
+      "officials": [
+        "Mark Ayotte",
+        "Brett Nansel",
+        "Jacyn Goble"
+      ],
+      "timesTied": 1,
+      "leadChanges": 3,
+      "nugget": null
+    },
+    {
+      "id": 7821,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-02T00:30:00.000Z",
+        "end": "2021-02-02T02:59:00.000Z",
+        "duration": "2:20"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 17,
+          "name": "Los Angeles Lakers",
+          "nickname": "Lakers",
+          "code": "LAL",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/220px-Los_Angeles_Lakers_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 16,
+          "loss": 6,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "28",
+            "22",
+            "25",
+            "32"
+          ],
+          "points": 107
+        },
+        "home": {
+          "win": 10,
+          "loss": 10,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "25",
+            "21",
+            "30",
+            "23"
+          ],
+          "points": 99
+        }
+      },
+      "officials": [
+        "David Guthrie",
+        "Mitchell Ervin",
+        "Mousa Dagher"
+      ],
+      "timesTied": 10,
+      "leadChanges": 11,
+      "nugget": null
+    },
+    {
+      "id": 7959,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-20T00:30:00.000Z",
+        "end": "2021-02-20T02:53:00.000Z",
+        "duration": "2:07"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "TD Garden",
+        "city": "Boston",
+        "state": "MA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 2,
+          "name": "Boston Celtics",
+          "nickname": "Celtics",
+          "code": "BOS",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 12,
+          "loss": 17,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "22",
+            "19",
+            "32",
+            "36"
+          ],
+          "points": 109
+        },
+        "home": {
+          "win": 15,
+          "loss": 14,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "33",
+            "33",
+            "32",
+            "23"
+          ],
+          "points": 121
+        }
+      },
+      "officials": [
+        "Leroy Richardson",
+        "Brian Forte",
+        "Karl Lane"
+      ],
+      "timesTied": 0,
+      "leadChanges": 4,
+      "nugget": null
+    },
+    {
+      "id": 8030,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-01T01:00:00.000Z",
+        "end": "2021-03-01T03:27:00.000Z",
+        "duration": "2:15"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "AmericanAirlines Arena",
+        "city": "Miami",
+        "state": "FL",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 20,
+          "name": "Miami Heat",
+          "nickname": "Heat",
+          "code": "MIA",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/1/1c/Miami_Heat_-_Logo.svg/1200px-Miami_Heat_-_Logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 14,
+          "loss": 20,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "21",
+            "23",
+            "33",
+            "22"
+          ],
+          "points": 99
+        },
+        "home": {
+          "win": 17,
+          "loss": 17,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "26",
+            "28",
+            "24",
+            "31"
+          ],
+          "points": 109
+        }
+      },
+      "officials": [
+        "Josh Tiven",
+        "Jacyn Goble",
+        "Robert Hussey"
+      ],
+      "timesTied": 6,
+      "leadChanges": 6,
+      "nugget": null
+    },
+    {
+      "id": 8046,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-03T00:30:00.000Z",
+        "end": "2021-03-03T02:52:00.000Z",
+        "duration": "2:11"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "AmericanAirlines Arena",
+        "city": "Miami",
+        "state": "FL",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 20,
+          "name": "Miami Heat",
+          "nickname": "Heat",
+          "code": "MIA",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/1/1c/Miami_Heat_-_Logo.svg/1200px-Miami_Heat_-_Logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 15,
+          "loss": 20,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "23",
+            "21",
+            "19",
+            "31"
+          ],
+          "points": 94
+        },
+        "home": {
+          "win": 17,
+          "loss": 18,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "17",
+            "20",
+            "29",
+            "14"
+          ],
+          "points": 80
+        }
+      },
+      "officials": [
+        "Scott Wall",
+        "Josh Tiven",
+        "Jason Goldenberg"
+      ],
+      "timesTied": 5,
+      "leadChanges": 7,
+      "nugget": null
+    },
+    {
+      "id": 8133,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2020-12-12T00:00:00.000Z",
+        "end": "2020-12-12T02:29:00.000Z",
+        "duration": "2:19"
+      },
+      "stage": 1,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 26,
+          "name": "Orlando Magic",
+          "nickname": "Magic",
+          "code": "ORL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/b/bd/Orlando_Magic_logo_2010.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 1,
+          "loss": 0,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "31",
+            "21",
+            "35",
+            "29"
+          ],
+          "points": 116
+        },
+        "home": {
+          "win": 0,
+          "loss": 1,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "23",
+            "29",
+            "25",
+            "35"
+          ],
+          "points": 112
+        }
+      },
+      "officials": [
+        "Scott Wall",
+        "Kevin Scott",
+        "Jenna Schroeder"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8740,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2020-12-13T22:00:00.000Z",
+        "end": "2020-12-14T00:31:00.000Z",
+        "duration": "2:23"
+      },
+      "stage": 1,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 26,
+          "name": "Orlando Magic",
+          "nickname": "Magic",
+          "code": "ORL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/b/bd/Orlando_Magic_logo_2010.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 1,
+          "loss": 1,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "26",
+            "26",
+            "30",
+            "25"
+          ],
+          "points": 107
+        },
+        "home": {
+          "win": 1,
+          "loss": 1,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "36",
+            "22",
+            "30",
+            "28"
+          ],
+          "points": 116
+        }
+      },
+      "officials": [
+        "Scott Wall",
+        "Kevin Scott",
+        "Jenna Schroeder"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8167,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2020-12-18T01:00:00.000Z",
+        "end": "2020-12-18T03:16:00.000Z",
+        "duration": "2:05"
+      },
+      "stage": 1,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "FedExForum",
+        "city": "Memphis",
+        "state": "TN",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 19,
+          "name": "Memphis Grizzlies",
+          "nickname": "Grizzlies",
+          "code": "MEM",
+          "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Memphis_Grizzlies.svg/1200px-Memphis_Grizzlies.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 1,
+          "loss": 2,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "34",
+            "32",
+            "17",
+            "23"
+          ],
+          "points": 106
+        },
+        "home": {
+          "win": 3,
+          "loss": 0,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "32",
+            "36",
+            "31",
+            "29"
+          ],
+          "points": 128
+        }
+      },
+      "officials": [
+        "Michael Smith",
+        "Matt Boland",
+        "Nate Green"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8186,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-25T02:00:00.000Z",
+        "end": "2021-03-25T04:21:00.000Z",
+        "duration": "2:10"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Golden 1 Center",
+        "city": "Sacramento",
+        "state": "CA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 30,
+          "name": "Sacramento Kings",
+          "nickname": "Kings",
+          "code": "SAC",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/9/95/Kings_de_Sacramento_logo.svg/1200px-Kings_de_Sacramento_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 22,
+          "loss": 22,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "27",
+            "30",
+            "17",
+            "34"
+          ],
+          "points": 108
+        },
+        "home": {
+          "win": 19,
+          "loss": 25,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "29",
+            "28",
+            "28",
+            "25"
+          ],
+          "points": 110
+        }
+      },
+      "officials": [
+        "Tony Brothers",
+        "Jason Goldenberg",
+        "Aaron Smith"
+      ],
+      "timesTied": 13,
+      "leadChanges": 9,
+      "nugget": null
+    },
+    {
+      "id": 8201,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-27T02:00:00.000Z",
+        "end": "2021-03-27T04:21:00.000Z",
+        "duration": "2:11"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Chase Center",
+        "city": "San Francisco",
+        "state": "CA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 11,
+          "name": "Golden State Warriors",
+          "nickname": "Warriors",
+          "code": "GSW",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/de/Warriors_de_Golden_State_logo.svg/1200px-Warriors_de_Golden_State_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 23,
+          "loss": 22,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "33",
+            "37",
+            "30",
+            "24"
+          ],
+          "points": 124
+        },
+        "home": {
+          "win": 22,
+          "loss": 24,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "26",
+            "26",
+            "32",
+            "24"
+          ],
+          "points": 108
+        }
+      },
+      "officials": [
+        "Tre Maddox",
+        "Dedric Taylor",
+        "Ashley Moyer-Gleich"
+      ],
+      "timesTied": 1,
+      "leadChanges": 2,
+      "nugget": null
+    },
+    {
+      "id": 8214,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-29T01:00:00.000Z",
+        "end": "2021-03-29T03:15:00.000Z",
+        "duration": "1:59"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Ball Arena",
+        "city": "Denver",
+        "state": "CO",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 9,
+          "name": "Denver Nuggets",
+          "nickname": "Nuggets",
+          "code": "DEN",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/3/35/Nuggets_de_Denver_2018.png/180px-Nuggets_de_Denver_2018.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 23,
+          "loss": 23,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "35",
+            "20",
+            "24",
+            "23"
+          ],
+          "points": 102
+        },
+        "home": {
+          "win": 28,
+          "loss": 18,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "31",
+            "34",
+            "32",
+            "29"
+          ],
+          "points": 126
+        }
+      },
+      "officials": [
+        "Marc Davis",
+        "Kevin Cutler",
+        "Dannica Mosher"
+      ],
+      "timesTied": 5,
+      "leadChanges": 6,
+      "nugget": null
+    },
+    {
+      "id": 8222,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2020-12-29T00:30:00.000Z",
+        "end": "2020-12-29T02:55:00.000Z",
+        "duration": "2:16"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 10,
+          "name": "Detroit Pistons",
+          "nickname": "Pistons",
+          "code": "DET",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Detroit_Pistons_primary_logo_2017.png/150px-Detroit_Pistons_primary_logo_2017.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 0,
+          "loss": 3,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "25",
+            "31",
+            "31",
+            "33"
+          ],
+          "points": 120
+        },
+        "home": {
+          "win": 3,
+          "loss": 0,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "33",
+            "32",
+            "35",
+            "28"
+          ],
+          "points": 128
+        }
+      },
+      "officials": [
+        "Eric Lewis",
+        "Curtis Blair",
+        "CJ Washington"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8238,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2020-12-31T00:30:00.000Z",
+        "end": "2020-12-31T02:50:00.000Z",
+        "duration": "2:10"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Barclays Center",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 4,
+          "name": "Brooklyn Nets",
+          "nickname": "Nets",
+          "code": "BKN",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/130px-Brooklyn_Nets_newlogo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 3,
+          "loss": 1,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "41",
+            "27",
+            "36",
+            "37"
+          ],
+          "points": 141
+        },
+        "home": {
+          "win": 3,
+          "loss": 2,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "38",
+            "29",
+            "35",
+            "43"
+          ],
+          "points": 145
+        }
+      },
+      "officials": [
+        "James Capers",
+        "Scott Wall",
+        "Jason Goldenberg"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8253,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-02T00:30:00.000Z",
+        "end": "2021-01-02T02:41:00.000Z",
+        "duration": "2:01"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Barclays Center",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 4,
+          "name": "Brooklyn Nets",
+          "nickname": "Nets",
+          "code": "BKN",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/130px-Brooklyn_Nets_newlogo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 4,
+          "loss": 1,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "29",
+            "32",
+            "28",
+            "25"
+          ],
+          "points": 114
+        },
+        "home": {
+          "win": 3,
+          "loss": 3,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "23",
+            "29",
+            "21",
+            "23"
+          ],
+          "points": 96
+        }
+      },
+      "officials": [
+        "Curtis Blair",
+        "Tyler Ford",
+        "Jenna Schroeder"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8264,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-03T00:30:00.000Z",
+        "end": "2021-01-03T02:53:00.000Z",
+        "duration": "2:15"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 7,
+          "name": "Cleveland Cavaliers",
+          "nickname": "Cavaliers",
+          "code": "CLE",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/0/06/Cavs_de_Cleveland_logo_2017.png/150px-Cavs_de_Cleveland_logo_2017.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 4,
+          "loss": 2,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "25",
+            "19",
+            "26",
+            "26"
+          ],
+          "points": 96
+        },
+        "home": {
+          "win": 4,
+          "loss": 2,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "35",
+            "21",
+            "18",
+            "17"
+          ],
+          "points": 91
+        }
+      },
+      "officials": [
+        "Courtney Kirkland",
+        "Aaron Smith",
+        "Danielle  Scott"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8276,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-05T00:30:00.000Z",
+        "end": "2021-01-05T02:56:00.000Z",
+        "duration": "2:16"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 4,
+          "loss": 3,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "31",
+            "23",
+            "30",
+            "29"
+          ],
+          "points": 113
+        },
+        "home": {
+          "win": 4,
+          "loss": 3,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "29",
+            "29",
+            "30",
+            "20"
+          ],
+          "points": 108
+        }
+      },
+      "officials": [
+        "JB DeRosa",
+        "Brian Forte",
+        "Phenizee Ransom"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8291,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-07T00:30:00.000Z",
+        "end": "2021-01-07T02:53:00.000Z",
+        "duration": "2:14"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 5,
+          "name": "Charlotte Hornets",
+          "nickname": "Hornets",
+          "code": "CHA",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/f/f3/Hornets_de_Charlotte_logo.svg/1200px-Hornets_de_Charlotte_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 3,
+          "loss": 5,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "27",
+            "32",
+            "22",
+            "21"
+          ],
+          "points": 102
+        },
+        "home": {
+          "win": 4,
+          "loss": 4,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "11",
+            "29",
+            "27",
+            "27"
+          ],
+          "points": 94
+        }
+      },
+      "officials": [
+        "JB DeRosa",
+        "Kevin Scott",
+        "John Butler"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8315,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-10T00:00:00.000Z",
+        "end": "2021-01-10T02:24:00.000Z",
+        "duration": "2:10"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Spectrum Center",
+        "city": "Charlotte",
+        "state": "NC",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 5,
+          "name": "Charlotte Hornets",
+          "nickname": "Hornets",
+          "code": "CHA",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/f/f3/Hornets_de_Charlotte_logo.svg/1200px-Hornets_de_Charlotte_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 4,
+          "loss": 5,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "29",
+            "21",
+            "26",
+            "29"
+          ],
+          "points": 105
+        },
+        "home": {
+          "win": 5,
+          "loss": 5,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "28",
+            "31",
+            "28",
+            "26"
+          ],
+          "points": 113
+        }
+      },
+      "officials": [
+        "Tre Maddox",
+        "Suyash Mehta",
+        "Jacyn Goble"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8334,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-12T00:30:00.000Z",
+        "end": "2021-01-12T02:40:00.000Z",
+        "duration": "2:02"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 27,
+          "name": "Philadelphia 76ers",
+          "nickname": "76ers",
+          "code": "PHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 7,
+          "loss": 4,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "32",
+            "18",
+            "15",
+            "29"
+          ],
+          "points": 94
+        },
+        "home": {
+          "win": 5,
+          "loss": 5,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "28",
+            "37",
+            "32",
+            "15"
+          ],
+          "points": 112
+        }
+      },
+      "officials": [
+        "Bill Kennedy",
+        "Eric Dalen",
+        "John Conley"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8352,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-31T02:00:00.000Z",
+        "end": "2021-03-31T04:18:00.000Z",
+        "duration": "2:09"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Phoenix Suns Arena",
+        "city": "Phoenix",
+        "state": "AZ",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 28,
+          "name": "Phoenix Suns",
+          "nickname": "Suns",
+          "code": "PHX",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/5/56/Phoenix_Suns_2013.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 23,
+          "loss": 24,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "27",
+            "25",
+            "33",
+            "25"
+          ],
+          "points": 110
+        },
+        "home": {
+          "win": 32,
+          "loss": 14,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "30",
+            "34",
+            "25",
+            "28"
+          ],
+          "points": 117
+        }
+      },
+      "officials": [
+        "Tre Maddox",
+        "Tyler Ford",
+        "Jason Goldenberg"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8367,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-01-16T02:00:00.000Z",
+        "end": "2021-01-16T04:18:00.000Z",
+        "duration": "2:06"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Vivint Smart Home Arena",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 40,
+          "name": "Utah Jazz",
+          "nickname": "Jazz",
+          "code": "UTA",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/3b/Jazz_de_l%27Utah_logo.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 5,
+          "loss": 6,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "23",
+            "23",
+            "28",
+            "18"
+          ],
+          "points": 92
+        },
+        "home": {
+          "win": 8,
+          "loss": 4,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "33",
+            "28",
+            "26",
+            "29"
+          ],
+          "points": 116
+        }
+      },
+      "officials": [
+        "Ed Malloy",
+        "James Williams",
+        "Justin Van Duyne"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8385,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-20T23:30:00.000Z",
+        "end": "2021-04-21T01:47:00.000Z",
+        "duration": "2:07"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 26,
+          "name": "Orlando Magic",
+          "nickname": "Magic",
+          "code": "ORL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/b/bd/Orlando_Magic_logo_2010.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 18,
+          "loss": 40,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "24",
+            "24",
+            "24",
+            "24"
+          ],
+          "points": 96
+        },
+        "home": {
+          "win": 32,
+          "loss": 26,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "27",
+            "38",
+            "15",
+            "32"
+          ],
+          "points": 112
+        }
+      },
+      "officials": [
+        "Tre Maddox",
+        "CJ Washington",
+        "Lauren Holtkamp"
+      ],
+      "timesTied": 2,
+      "leadChanges": 3,
+      "nugget": null
+    },
+    {
+      "id": 8395,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-22T00:00:00.000Z",
+        "end": "2021-04-22T02:46:00.000Z",
+        "duration": "2:32"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 5,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Madison Square Garden",
+        "city": "New York",
+        "state": "NY",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 32,
+          "loss": 27,
+          "series": {
+            "win": 0,
+            "loss": 3
+          },
+          "linescore": [
+            "39",
+            "30",
+            "28",
+            "25",
+            "5"
+          ],
+          "points": 127
+        },
+        "home": {
+          "win": 33,
+          "loss": 27,
+          "series": {
+            "win": 3,
+            "loss": 0
+          },
+          "linescore": [
+            "34",
+            "33",
+            "23",
+            "32",
+            "15"
+          ],
+          "points": 137
+        }
+      },
+      "officials": [
+        "Mark Ayotte",
+        "Josh Tiven",
+        "Matt Myers"
+      ],
+      "timesTied": 9,
+      "leadChanges": 13,
+      "nugget": null
+    },
+    {
+      "id": 8407,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-23T23:30:00.000Z",
+        "end": "2021-04-24T01:49:00.000Z",
+        "duration": "2:09"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 20,
+          "name": "Miami Heat",
+          "nickname": "Heat",
+          "code": "MIA",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/1/1c/Miami_Heat_-_Logo.svg/1200px-Miami_Heat_-_Logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 31,
+          "loss": 29,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "30",
+            "31",
+            "28",
+            "14"
+          ],
+          "points": 103
+        },
+        "home": {
+          "win": 33,
+          "loss": 27,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "31",
+            "31",
+            "33",
+            "23"
+          ],
+          "points": 118
+        }
+      },
+      "officials": [
+        "Rodney Mott",
+        "Curtis Blair",
+        "Mousa Dagher"
+      ],
+      "timesTied": 6,
+      "leadChanges": 18,
+      "nugget": null
+    },
+    {
+      "id": 8422,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-25T23:30:00.000Z",
+        "end": "2021-04-26T01:55:00.000Z",
+        "duration": "2:16"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 21,
+          "name": "Milwaukee Bucks",
+          "nickname": "Bucks",
+          "code": "MIL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 37,
+          "loss": 23,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "29",
+            "22",
+            "27",
+            "26"
+          ],
+          "points": 104
+        },
+        "home": {
+          "win": 34,
+          "loss": 27,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "26",
+            "17",
+            "27",
+            "41"
+          ],
+          "points": 111
+        }
+      },
+      "officials": [
+        "Rodney Mott",
+        "Curtis Blair",
+        "Simone Jelks"
+      ],
+      "timesTied": 2,
+      "leadChanges": 11,
+      "nugget": null
+    },
+    {
+      "id": 8425,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-26T23:00:00.000Z",
+        "end": "2021-04-27T01:13:00.000Z",
+        "duration": "2:03"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Little Caesars Arena",
+        "city": "Detroit",
+        "state": "MI",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 10,
+          "name": "Detroit Pistons",
+          "nickname": "Pistons",
+          "code": "DET",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Detroit_Pistons_primary_logo_2017.png/150px-Detroit_Pistons_primary_logo_2017.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 34,
+          "loss": 28,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "23",
+            "21",
+            "23",
+            "19"
+          ],
+          "points": 86
+        },
+        "home": {
+          "win": 19,
+          "loss": 43,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "27",
+            "28",
+            "19",
+            "26"
+          ],
+          "points": 100
+        }
+      },
+      "officials": [
+        "Brett Nansel",
+        "Ben Taylor",
+        "Ray Acosta"
+      ],
+      "timesTied": 3,
+      "leadChanges": 6,
+      "nugget": null
+    },
+    {
+      "id": 8458,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-30T23:00:00.000Z",
+        "end": "2021-05-01T01:25:00.000Z",
+        "duration": "2:16"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 27,
+          "name": "Philadelphia 76ers",
+          "nickname": "76ers",
+          "code": "PHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 34,
+          "loss": 30,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "26",
+            "20",
+            "31",
+            "27"
+          ],
+          "points": 104
+        },
+        "home": {
+          "win": 41,
+          "loss": 21,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "23",
+            "42",
+            "29",
+            "32"
+          ],
+          "points": 126
+        }
+      },
+      "officials": [
+        "John Goble",
+        "Matt Myers",
+        "Dedric Taylor"
+      ],
+      "timesTied": 2,
+      "leadChanges": 4,
+      "nugget": null
+    },
+    {
+      "id": 8468,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-02T00:00:00.000Z",
+        "end": "2021-05-02T02:20:00.000Z",
+        "duration": "2:10"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 6,
+          "name": "Chicago Bulls",
+          "nickname": "Bulls",
+          "code": "CHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d1/Bulls_de_Chicago_logo.svg/1200px-Bulls_de_Chicago_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 26,
+          "loss": 38,
+          "series": {
+            "win": 0,
+            "loss": 3
+          },
+          "linescore": [
+            "26",
+            "37",
+            "12",
+            "22"
+          ],
+          "points": 97
+        },
+        "home": {
+          "win": 35,
+          "loss": 30,
+          "series": {
+            "win": 3,
+            "loss": 0
+          },
+          "linescore": [
+            "31",
+            "23",
+            "28",
+            "26"
+          ],
+          "points": 108
+        }
+      },
+      "officials": [
+        "Kevin Cutler",
+        "Kane Fitzgerald",
+        "Dannica Mosher"
+      ],
+      "timesTied": 6,
+      "leadChanges": 5,
+      "nugget": null
+    },
+    {
+      "id": 8487,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-04T00:00:00.000Z",
+        "end": "2021-05-04T02:11:00.000Z",
+        "duration": "2:02"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 29,
+          "name": "Portland Trail Blazers",
+          "nickname": "Trail Blazers",
+          "code": "POR",
+          "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Portland_Trail_Blazers_logo.svg/1200px-Portland_Trail_Blazers_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 36,
+          "loss": 29,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "31",
+            "31",
+            "33",
+            "19"
+          ],
+          "points": 114
+        },
+        "home": {
+          "win": 36,
+          "loss": 30,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "32",
+            "36",
+            "34",
+            "21"
+          ],
+          "points": 123
+        }
+      },
+      "officials": [
+        "Kane Fitzgerald",
+        "Nick Buchert",
+        "Lauren Holtkamp"
+      ],
+      "timesTied": 6,
+      "leadChanges": 12,
+      "nugget": null
+    },
+    {
+      "id": 8501,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-06T00:00:00.000Z",
+        "end": "2021-05-06T02:14:00.000Z",
+        "duration": "2:04"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 28,
+          "name": "Phoenix Suns",
+          "nickname": "Suns",
+          "code": "PHX",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/5/56/Phoenix_Suns_2013.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 47,
+          "loss": 19,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "38",
+            "27",
+            "23",
+            "15"
+          ],
+          "points": 103
+        },
+        "home": {
+          "win": 37,
+          "loss": 30,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "42",
+            "25",
+            "30",
+            "38"
+          ],
+          "points": 135
+        }
+      },
+      "officials": [
+        "Ken Mauer",
+        "Ray Acosta",
+        "Simone Jelks"
+      ],
+      "timesTied": 9,
+      "leadChanges": 8,
+      "nugget": null
+    },
+    {
+      "id": 8511,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-04T00:30:00.000Z",
+        "end": "2021-02-04T02:58:00.000Z",
+        "duration": "2:19"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 8,
+          "name": "Dallas Mavericks",
+          "nickname": "Mavericks",
+          "code": "DAL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b8/Mavericks_de_Dallas_logo.svg/150px-Mavericks_de_Dallas_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 9,
+          "loss": 13,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "26",
+            "27",
+            "35",
+            "34"
+          ],
+          "points": 122
+        },
+        "home": {
+          "win": 10,
+          "loss": 11,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "22",
+            "34",
+            "27",
+            "33"
+          ],
+          "points": 116
+        }
+      },
+      "officials": [
+        "Bennie Adams",
+        "David Guthrie",
+        "Lauren Holtkamp"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8519,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-05T00:30:00.000Z",
+        "end": "2021-02-05T02:43:00.000Z",
+        "duration": "2:03"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 40,
+          "name": "Utah Jazz",
+          "nickname": "Jazz",
+          "code": "UTA",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/3b/Jazz_de_l%27Utah_logo.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 17,
+          "loss": 5,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "20",
+            "25",
+            "35",
+            "32"
+          ],
+          "points": 112
+        },
+        "home": {
+          "win": 10,
+          "loss": 12,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "16",
+            "21",
+            "26",
+            "28"
+          ],
+          "points": 91
+        }
+      },
+      "officials": [
+        "Bill Kennedy",
+        "James Williams",
+        "Jenna Schroeder"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8537,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-07T01:00:00.000Z",
+        "end": "2021-02-07T03:28:00.000Z",
+        "duration": "2:19"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 38,
+          "name": "Toronto Raptors",
+          "nickname": "Raptors",
+          "code": "TOR",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/8/89/Raptors2015.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 10,
+          "loss": 13,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "34",
+            "29",
+            "31",
+            "27"
+          ],
+          "points": 121
+        },
+        "home": {
+          "win": 11,
+          "loss": 12,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "28",
+            "38",
+            "35",
+            "31"
+          ],
+          "points": 132
+        }
+      },
+      "officials": [
+        "James Williams",
+        "Dedric Taylor",
+        "Jenna Schroeder"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8774,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-11T00:30:00.000Z",
+        "end": "2021-02-11T03:07:00.000Z",
+        "duration": "2:22"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "American Airlines Center",
+        "city": "Dallas",
+        "state": "TX",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 8,
+          "name": "Dallas Mavericks",
+          "nickname": "Mavericks",
+          "code": "DAL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b8/Mavericks_de_Dallas_logo.svg/150px-Mavericks_de_Dallas_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 11,
+          "loss": 13,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "32",
+            "30",
+            "28",
+            "27"
+          ],
+          "points": 117
+        },
+        "home": {
+          "win": 12,
+          "loss": 14,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "33",
+            "19",
+            "29",
+            "37"
+          ],
+          "points": 118
+        }
+      },
+      "officials": [
+        "Sean Wright",
+        "Josh Tiven",
+        "Brandon Adair"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8578,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-13T00:30:00.000Z",
+        "end": "2021-02-13T02:49:00.000Z",
+        "duration": "2:10"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 31,
+          "name": "San Antonio Spurs",
+          "nickname": "Spurs",
+          "code": "SAS",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/0/0e/San_Antonio_Spurs_2018.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 15,
+          "loss": 11,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "36",
+            "41",
+            "33",
+            "15"
+          ],
+          "points": 125
+        },
+        "home": {
+          "win": 11,
+          "loss": 14,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "29",
+            "19",
+            "24",
+            "42"
+          ],
+          "points": 114
+        }
+      },
+      "officials": [
+        "Derek Richardson",
+        "Curtis Blair",
+        "Gediminas Petraitis"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8588,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-14T00:30:00.000Z",
+        "end": "2021-02-14T02:49:00.000Z",
+        "duration": "2:10"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 15,
+          "name": "Indiana Pacers",
+          "nickname": "Pacers",
+          "code": "IND",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/c/cf/Pacers_de_l%27Indiana_logo.svg/1180px-Pacers_de_l%27Indiana_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 14,
+          "loss": 13,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "27",
+            "35",
+            "22",
+            "41"
+          ],
+          "points": 125
+        },
+        "home": {
+          "win": 11,
+          "loss": 15,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "26",
+            "32",
+            "29",
+            "26"
+          ],
+          "points": 113
+        }
+      },
+      "officials": [
+        "Curtis Blair",
+        "Gediminas Petraitis",
+        "Ashley Moyer-Gleich"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8603,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-16T00:30:00.000Z",
+        "end": "2021-02-16T03:00:00.000Z",
+        "duration": "2:18"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Madison Square Garden",
+        "city": "New York",
+        "state": "NY",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 11,
+          "loss": 16,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "28",
+            "35",
+            "27",
+            "22"
+          ],
+          "points": 112
+        },
+        "home": {
+          "win": 14,
+          "loss": 15,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "39",
+            "27",
+            "29",
+            "28"
+          ],
+          "points": 123
+        }
+      },
+      "officials": [
+        "Rodney Mott",
+        "Brett Nansel",
+        "Lauren Holtkamp"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8619,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-18T00:30:00.000Z",
+        "end": "2021-02-18T03:03:00.000Z",
+        "duration": "2:22"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "TD Garden",
+        "city": "Boston",
+        "state": "MA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 2,
+          "name": "Boston Celtics",
+          "nickname": "Celtics",
+          "code": "BOS",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 12,
+          "loss": 16,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "33",
+            "29",
+            "28",
+            "32"
+          ],
+          "points": 122
+        },
+        "home": {
+          "win": 14,
+          "loss": 14,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "35",
+            "21",
+            "25",
+            "33"
+          ],
+          "points": 114
+        }
+      },
+      "officials": [
+        "Derek Richardson",
+        "Brian Forte",
+        "Gediminas Petraitis"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8630,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-04",
+        "end": null,
+        "duration": ":"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 1,
+        "long": "Scheduled"
+      },
+      "periods": {
+        "current": 0,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 3,
+            "loss": 0
+          },
+          "linescore": [
+            "0"
+          ],
+          "points": null
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 0,
+            "loss": 3
+          },
+          "linescore": [
+            "0"
+          ],
+          "points": null
+        }
+      },
+      "officials": [],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8651,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-22T00:30:00.000Z",
+        "end": "2021-02-22T02:55:00.000Z",
+        "duration": "2:16"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 9,
+          "name": "Denver Nuggets",
+          "nickname": "Nuggets",
+          "code": "DEN",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/3/35/Nuggets_de_Denver_2018.png/180px-Nuggets_de_Denver_2018.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 16,
+          "loss": 14,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "33",
+            "23",
+            "20",
+            "39"
+          ],
+          "points": 115
+        },
+        "home": {
+          "win": 13,
+          "loss": 17,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "27",
+            "37",
+            "29",
+            "30"
+          ],
+          "points": 123
+        }
+      },
+      "officials": [
+        "Ken Mauer",
+        "Leroy Richardson",
+        "Matt Boland"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8661,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-24T00:00:00.000Z",
+        "end": "2021-02-24T02:21:00.000Z",
+        "duration": "2:08"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Rocket Mortgage FieldHouse",
+        "city": "Cleveland",
+        "state": "OH",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 7,
+          "name": "Cleveland Cavaliers",
+          "nickname": "Cavaliers",
+          "code": "CLE",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/0/06/Cavs_de_Cleveland_logo_2017.png/150px-Cavs_de_Cleveland_logo_2017.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 13,
+          "loss": 18,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "27",
+            "28",
+            "29",
+            "27"
+          ],
+          "points": 111
+        },
+        "home": {
+          "win": 11,
+          "loss": 21,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "28",
+            "30",
+            "26",
+            "28"
+          ],
+          "points": 112
+        }
+      },
+      "officials": [
+        "JB DeRosa",
+        "Marc Davis",
+        "John Butler"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8671,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-25T00:30:00.000Z",
+        "end": "2021-02-25T02:48:00.000Z",
+        "duration": "2:07"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 2,
+          "name": "Boston Celtics",
+          "nickname": "Celtics",
+          "code": "BOS",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 15,
+          "loss": 17,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "27",
+            "22",
+            "29",
+            "34"
+          ],
+          "points": 112
+        },
+        "home": {
+          "win": 14,
+          "loss": 18,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "40",
+            "32",
+            "27",
+            "28"
+          ],
+          "points": 127
+        }
+      },
+      "officials": [
+        "Eric Dalen",
+        "Kevin Scott",
+        "Phenizee Ransom"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8691,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-02-27T01:00:00.000Z",
+        "end": "2021-02-27T03:15:00.000Z",
+        "duration": "2:04"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Chesapeake Energy Arena",
+        "city": "Oklahoma City",
+        "state": "OK",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 25,
+          "name": "Oklahoma City Thunder",
+          "nickname": "Thunder",
+          "code": "OKC",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Thunder_d%27Oklahoma_City_logo.svg/1200px-Thunder_d%27Oklahoma_City_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 14,
+          "loss": 19,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "33",
+            "22",
+            "25",
+            "29"
+          ],
+          "points": 109
+        },
+        "home": {
+          "win": 14,
+          "loss": 19,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "31",
+            "32",
+            "33",
+            "22"
+          ],
+          "points": 118
+        }
+      },
+      "officials": [
+        "Bennie Adams",
+        "Curtis Blair",
+        "Nick Buchert"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8725,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-04T01:00:00.000Z",
+        "end": "2021-03-04T03:28:00.000Z",
+        "duration": "2:18"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Amway Center",
+        "city": "Orlando",
+        "state": "FL",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 26,
+          "name": "Orlando Magic",
+          "nickname": "Magic",
+          "code": "ORL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/b/bd/Orlando_Magic_logo_2010.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 16,
+          "loss": 20,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "27",
+            "15",
+            "36",
+            "37"
+          ],
+          "points": 115
+        },
+        "home": {
+          "win": 13,
+          "loss": 23,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "39",
+            "22",
+            "29",
+            "22"
+          ],
+          "points": 112
+        }
+      },
+      "officials": [
+        "Ken Mauer",
+        "Karl Lane",
+        "Ray Acosta"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8798,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-12T00:30:00.000Z",
+        "end": "2021-03-12T03:06:00.000Z",
+        "duration": "2:25"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Amalie Arena",
+        "city": "Tampa",
+        "state": "FL",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 38,
+          "name": "Toronto Raptors",
+          "nickname": "Raptors",
+          "code": "TOR",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/8/89/Raptors2015.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 17,
+          "loss": 20,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "37",
+            "27",
+            "20",
+            "37"
+          ],
+          "points": 121
+        },
+        "home": {
+          "win": 17,
+          "loss": 20,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "26",
+            "33",
+            "35",
+            "26"
+          ],
+          "points": 120
+        }
+      },
+      "officials": [
+        "Scott Foster",
+        "Leroy Richardson",
+        "Scott Wall"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8818,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-14T00:30:00.000Z",
+        "end": "2021-03-14T02:54:00.000Z",
+        "duration": "2:15"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 30,
+          "name": "Sacramento Kings",
+          "nickname": "Kings",
+          "code": "SAC",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/9/95/Kings_de_Sacramento_logo.svg/1200px-Kings_de_Sacramento_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 15,
+          "loss": 23,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "33",
+            "18",
+            "30",
+            "25"
+          ],
+          "points": 106
+        },
+        "home": {
+          "win": 18,
+          "loss": 20,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "22",
+            "39",
+            "37",
+            "23"
+          ],
+          "points": 121
+        }
+      },
+      "officials": [
+        "Scott Foster",
+        "Scott Wall",
+        "Marat Kogut"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8825,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-14T23:30:00.000Z",
+        "end": "2021-03-15T01:50:00.000Z",
+        "duration": "2:10"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 7,
+          "name": "Cleveland Cavaliers",
+          "nickname": "Cavaliers",
+          "code": "CLE",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/0/06/Cavs_de_Cleveland_logo_2017.png/150px-Cavs_de_Cleveland_logo_2017.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 14,
+          "loss": 24,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "22",
+            "24",
+            "20",
+            "16"
+          ],
+          "points": 82
+        },
+        "home": {
+          "win": 19,
+          "loss": 20,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "26",
+            "23",
+            "20",
+            "31"
+          ],
+          "points": 100
+        }
+      },
+      "officials": [
+        "Eric Lewis",
+        "Marat Kogut",
+        "Evan Scott"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8841,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-17T00:00:00.000Z",
+        "end": "2021-03-17T02:10:00.000Z",
+        "duration": "2:00"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Toyota Center",
+        "city": "Houston",
+        "state": "TX",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 14,
+          "name": "Houston Rockets",
+          "nickname": "Rockets",
+          "code": "HOU",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/de/Houston_Rockets_logo_2003.png/330px-Houston_Rockets_logo_2003.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 20,
+          "loss": 20,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "35",
+            "38",
+            "20",
+            "26"
+          ],
+          "points": 119
+        },
+        "home": {
+          "win": 11,
+          "loss": 27,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "22",
+            "36",
+            "34",
+            "15"
+          ],
+          "points": 107
+        }
+      },
+      "officials": [
+        "James Capers",
+        "Mark Ayotte",
+        "Jenna Schroeder"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8854,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-18T23:30:00.000Z",
+        "end": "2021-03-19T01:51:00.000Z",
+        "duration": "1:59"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 25,
+          "name": "Oklahoma City Thunder",
+          "nickname": "Thunder",
+          "code": "OKC",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Thunder_d%27Oklahoma_City_logo.svg/1200px-Thunder_d%27Oklahoma_City_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 17,
+          "loss": 24,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "21",
+            "20",
+            "26",
+            "26"
+          ],
+          "points": 93
+        },
+        "home": {
+          "win": 21,
+          "loss": 20,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "31",
+            "30",
+            "30",
+            "25"
+          ],
+          "points": 116
+        }
+      },
+      "officials": [
+        "James Capers",
+        "JB DeRosa",
+        "Mousa Dagher"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8868,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-20T19:30:00.000Z",
+        "end": "2021-03-20T21:51:00.000Z",
+        "duration": "2:09"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "STAPLES Center",
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 17,
+          "name": "Los Angeles Lakers",
+          "nickname": "Lakers",
+          "code": "LAL",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/220px-Los_Angeles_Lakers_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 22,
+          "loss": 20,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "28",
+            "24",
+            "22",
+            "25"
+          ],
+          "points": 99
+        },
+        "home": {
+          "win": 28,
+          "loss": 14,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "25",
+            "28",
+            "12",
+            "29"
+          ],
+          "points": 94
+        }
+      },
+      "officials": [
+        "Bennie Adams",
+        "Mark Ayotte",
+        "Josh Tiven"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8888,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-03-23T02:00:00.000Z",
+        "end": "2021-03-23T04:20:00.000Z",
+        "duration": "2:06"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "STAPLES Center",
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 16,
+          "name": "LA Clippers",
+          "nickname": "Clippers",
+          "code": "LAC",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/d/d6/Los_Angeles_Clippers_logo_2010.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 22,
+          "loss": 21,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "29",
+            "34",
+            "27",
+            "20"
+          ],
+          "points": 110
+        },
+        "home": {
+          "win": 28,
+          "loss": 16,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "30",
+            "18",
+            "34",
+            "37"
+          ],
+          "points": 119
+        }
+      },
+      "officials": [
+        "Bennie Adams",
+        "Josh Tiven",
+        "Dedric Taylor"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8963,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-02T00:30:00.000Z",
+        "end": "2021-04-02T03:27:00.000Z",
+        "duration": "2:47"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 6,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "AT&T Center",
+        "city": "San Antonio",
+        "state": "TX",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 31,
+          "name": "San Antonio Spurs",
+          "nickname": "Spurs",
+          "code": "SAS",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/0/0e/San_Antonio_Spurs_2018.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 24,
+          "loss": 24,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "32",
+            "22",
+            "30",
+            "26",
+            "9",
+            "15"
+          ],
+          "points": 134
+        },
+        "home": {
+          "win": 24,
+          "loss": 22,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "22",
+            "26",
+            "32",
+            "30",
+            "9",
+            "10"
+          ],
+          "points": 129
+        }
+      },
+      "officials": [
+        "Tre Maddox",
+        "Dedric Taylor",
+        "Danielle Scott"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8970,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-03T01:00:00.000Z",
+        "end": "2021-04-03T03:24:00.000Z",
+        "duration": "2:14"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Smoothie King Center",
+        "city": "New Orleans",
+        "state": "LA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 23,
+          "name": "New Orleans Pelicans",
+          "nickname": "Pelicans",
+          "code": "NOP",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/21/New_Orleans_Pelicans.png/200px-New_Orleans_Pelicans.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 25,
+          "loss": 24,
+          "series": {
+            "win": 1,
+            "loss": 0
+          },
+          "linescore": [
+            "28",
+            "27",
+            "39",
+            "32"
+          ],
+          "points": 126
+        },
+        "home": {
+          "win": 21,
+          "loss": 27,
+          "series": {
+            "win": 0,
+            "loss": 1
+          },
+          "linescore": [
+            "34",
+            "20",
+            "25",
+            "24"
+          ],
+          "points": 103
+        }
+      },
+      "officials": [
+        "Scott Wall",
+        "Curtis Blair",
+        "Andy Nagy"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8987,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-04T23:30:00.000Z",
+        "end": "2021-04-05T02:18:00.000Z",
+        "duration": "2:28"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 11,
+          "name": "Golden State Warriors",
+          "nickname": "Warriors",
+          "code": "GSW",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/de/Warriors_de_Golden_State_logo.svg/1200px-Warriors_de_Golden_State_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 23,
+          "loss": 27,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "24",
+            "35",
+            "23",
+            "29"
+          ],
+          "points": 111
+        },
+        "home": {
+          "win": 26,
+          "loss": 24,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "24",
+            "33",
+            "22",
+            "38"
+          ],
+          "points": 117
+        }
+      },
+      "officials": [
+        "Courtney Kirkland",
+        "Scott Twardoski",
+        "Evan Scott"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 8998,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-06T23:30:00.000Z",
+        "end": "2021-04-07T01:43:00.000Z",
+        "duration": "2:03"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 23,
+          "name": "New Orleans Pelicans",
+          "nickname": "Pelicans",
+          "code": "NOP",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/21/New_Orleans_Pelicans.png/200px-New_Orleans_Pelicans.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 22,
+          "loss": 28,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "29",
+            "32",
+            "29",
+            "17"
+          ],
+          "points": 107
+        },
+        "home": {
+          "win": 27,
+          "loss": 24,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "25",
+            "36",
+            "46",
+            "16"
+          ],
+          "points": 123
+        }
+      },
+      "officials": [
+        "Leon Wood",
+        "Tony Brown",
+        "Brett Nansel"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9008,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-08T00:00:00.000Z",
+        "end": "2021-04-08T02:13:00.000Z",
+        "duration": "2:03"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 19,
+          "name": "Memphis Grizzlies",
+          "nickname": "Grizzlies",
+          "code": "MEM",
+          "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Memphis_Grizzlies.svg/1200px-Memphis_Grizzlies.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 26,
+          "loss": 23,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "29",
+            "38",
+            "43",
+            "21"
+          ],
+          "points": 131
+        },
+        "home": {
+          "win": 27,
+          "loss": 25,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "34",
+            "30",
+            "23",
+            "26"
+          ],
+          "points": 113
+        }
+      },
+      "officials": [
+        "Ed Malloy",
+        "Brett Nansel",
+        "Gediminas Petraitis"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9019,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-10T00:00:00.000Z",
+        "end": "2021-04-10T02:13:00.000Z",
+        "duration": "2:04"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 6,
+          "name": "Chicago Bulls",
+          "nickname": "Bulls",
+          "code": "CHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d1/Bulls_de_Chicago_logo.svg/1200px-Bulls_de_Chicago_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 22,
+          "loss": 29,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "33",
+            "33",
+            "18",
+            "24"
+          ],
+          "points": 108
+        },
+        "home": {
+          "win": 28,
+          "loss": 25,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "25",
+            "28",
+            "33",
+            "34"
+          ],
+          "points": 120
+        }
+      },
+      "officials": [
+        "Scott Wall",
+        "Ed Malloy",
+        "Dannica Mosher"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9033,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-11T17:00:00.000Z",
+        "end": "2021-04-11T19:24:00.000Z",
+        "duration": "2:12"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Spectrum Center",
+        "city": "Charlotte",
+        "state": "NC",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 5,
+          "name": "Charlotte Hornets",
+          "nickname": "Hornets",
+          "code": "CHA",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/f/f3/Hornets_de_Charlotte_logo.svg/1200px-Hornets_de_Charlotte_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 29,
+          "loss": 25,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "33",
+            "19",
+            "23",
+            "30"
+          ],
+          "points": 105
+        },
+        "home": {
+          "win": 27,
+          "loss": 25,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "20",
+            "25",
+            "32",
+            "24"
+          ],
+          "points": 101
+        }
+      },
+      "officials": [
+        "James Capers",
+        "Brent Barnaky",
+        "Phenizee Ransom"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9052,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-13T23:30:00.000Z",
+        "end": "2021-04-14T02:40:00.000Z",
+        "duration": "2:07"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Amalie Arena",
+        "city": "Tampa",
+        "state": "FL",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 38,
+          "name": "Toronto Raptors",
+          "nickname": "Raptors",
+          "code": "TOR",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/8/89/Raptors2015.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 30,
+          "loss": 25,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "28",
+            "38",
+            "24",
+            "18"
+          ],
+          "points": 108
+        },
+        "home": {
+          "win": 21,
+          "loss": 34,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "27",
+            "27",
+            "24",
+            "25"
+          ],
+          "points": 103
+        }
+      },
+      "officials": [
+        "John Goble",
+        "Tyler Ford",
+        "Mousa Dagher"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9068,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-15T23:30:00.000Z",
+        "end": "2021-04-16T01:57:00.000Z",
+        "duration": "2:12"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 21,
+          "name": "Milwaukee Bucks",
+          "nickname": "Bucks",
+          "code": "MIL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 35,
+          "loss": 20,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "33",
+            "31",
+            "30",
+            "26"
+          ],
+          "points": 120
+        },
+        "home": {
+          "win": 30,
+          "loss": 26,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "29",
+            "23",
+            "30",
+            "27"
+          ],
+          "points": 109
+        }
+      },
+      "officials": [
+        "James Capers",
+        "Scott Wall",
+        "Tyler Ford"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9089,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-18T17:00:00.000Z",
+        "end": "2021-04-18T19:23:00.000Z",
+        "duration": "2:13"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 15,
+          "name": "Indiana Pacers",
+          "nickname": "Pacers",
+          "code": "IND",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/c/cf/Pacers_de_l%27Indiana_logo.svg/1180px-Pacers_de_l%27Indiana_logo.svg.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 26,
+          "loss": 30,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "23",
+            "34",
+            "33",
+            "27"
+          ],
+          "points": 117
+        },
+        "home": {
+          "win": 31,
+          "loss": 26,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "35",
+            "31",
+            "28",
+            "35"
+          ],
+          "points": 129
+        }
+      },
+      "officials": [
+        "Tony Brothers",
+        "Michael Smith",
+        "Lauren Holtkamp"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9162,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-04-28T23:00:00.000Z",
+        "end": "2021-04-29T01:27:00.000Z",
+        "duration": "2:10"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 27,
+          "name": "Philadelphia 76ers",
+          "nickname": "76ers",
+          "code": "PHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 34,
+          "loss": 29,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "17",
+            "22",
+            "24",
+            "20"
+          ],
+          "points": 83
+        },
+        "home": {
+          "win": 40,
+          "loss": 21,
+          "series": {
+            "win": 1,
+            "loss": 1
+          },
+          "linescore": [
+            "37",
+            "30",
+            "26",
+            "34"
+          ],
+          "points": 127
+        }
+      },
+      "officials": [
+        "Marc Davis",
+        "John Conley",
+        "Jacyn Goble"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9228,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-07T00:00:00.000Z",
+        "end": "2021-05-07T02:19:00.000Z",
+        "duration": "2:09"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Bankers Life Fieldhouse",
+        "city": "Indianapolis",
+        "state": "IN",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 15,
+          "name": "Indiana Pacers",
+          "nickname": "Pacers",
+          "code": "IND",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/c/cf/Pacers_de_l%27Indiana_logo.svg/1180px-Pacers_de_l%27Indiana_logo.svg.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 37,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "26",
+            "32",
+            "38",
+            "30"
+          ],
+          "points": 126
+        },
+        "home": {
+          "win": 31,
+          "loss": 35,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "36",
+            "36",
+            "38",
+            "23"
+          ],
+          "points": 133
+        }
+      },
+      "officials": [
+        "Derek Richardson",
+        "James Williams",
+        "Suyash Mehta"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9254,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-10T23:30:00.000Z",
+        "end": "2021-05-11T01:46:00.000Z",
+        "duration": "2:06"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 41,
+          "name": "Washington Wizards",
+          "nickname": "Wizards",
+          "code": "WAS",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/archive/d/d6/20161212034849%21Wizards2015.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 32,
+          "loss": 37,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "32",
+            "30",
+            "17",
+            "45"
+          ],
+          "points": 124
+        },
+        "home": {
+          "win": 38,
+          "loss": 31,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "34",
+            "27",
+            "35",
+            "29"
+          ],
+          "points": 125
+        }
+      },
+      "officials": [
+        "Tom Washington",
+        "Gediminas Petraitis",
+        "Simone Jelks"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9270,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-12T23:00:00.000Z",
+        "end": "2021-05-13T01:33:00.000Z",
+        "duration": "2:19"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 41,
+          "name": "Washington Wizards",
+          "nickname": "Wizards",
+          "code": "WAS",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/archive/d/d6/20161212034849%21Wizards2015.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 32,
+          "loss": 38,
+          "series": {
+            "win": 0,
+            "loss": 3
+          },
+          "linescore": [
+            "30",
+            "29",
+            "32",
+            "25"
+          ],
+          "points": 116
+        },
+        "home": {
+          "win": 39,
+          "loss": 31,
+          "series": {
+            "win": 3,
+            "loss": 0
+          },
+          "linescore": [
+            "35",
+            "21",
+            "27",
+            "37"
+          ],
+          "points": 120
+        }
+      },
+      "officials": [
+        "Marc Davis",
+        "Karl Lane",
+        "Brandon Adair"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9277,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-13T23:30:00.000Z",
+        "end": "2021-05-14T01:45:00.000Z",
+        "duration": "2:04"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 26,
+          "name": "Orlando Magic",
+          "nickname": "Magic",
+          "code": "ORL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/b/bd/Orlando_Magic_logo_2010.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 21,
+          "loss": 49,
+          "series": {
+            "win": 0,
+            "loss": 3
+          },
+          "linescore": [
+            "16",
+            "25",
+            "30",
+            "22"
+          ],
+          "points": 93
+        },
+        "home": {
+          "win": 40,
+          "loss": 31,
+          "series": {
+            "win": 3,
+            "loss": 0
+          },
+          "linescore": [
+            "29",
+            "32",
+            "32",
+            "23"
+          ],
+          "points": 116
+        }
+      },
+      "officials": [
+        "Kevin Cutler",
+        "Aaron Smith",
+        "Brandon Adair"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9294,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-16T23:00:00.000Z",
+        "end": "2021-05-17T01:10:00.000Z",
+        "duration": "2:01"
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 14,
+          "name": "Houston Rockets",
+          "nickname": "Rockets",
+          "code": "HOU",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/de/Houston_Rockets_logo_2003.png/330px-Houston_Rockets_logo_2003.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 17,
+          "loss": 55,
+          "series": {
+            "win": 0,
+            "loss": 2
+          },
+          "linescore": [
+            "33",
+            "21",
+            "18",
+            "23"
+          ],
+          "points": 95
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 2,
+            "loss": 0
+          },
+          "linescore": [
+            "36",
+            "36",
+            "27",
+            "25"
+          ],
+          "points": 124
+        }
+      },
+      "officials": [
+        "Bennie Adams",
+        "Eric Lewis",
+        "Ben Taylor"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9344,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-23T23:00:00.000Z",
+        "end": "2021-05-24T01:23:00.000Z",
+        "duration": "2:20"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Madison Square Garden",
+        "city": "New York",
+        "state": "NY",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 0,
+            "loss": 3
+          },
+          "linescore": [
+            "24",
+            "28",
+            "19",
+            "36"
+          ],
+          "points": 107
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 3,
+            "loss": 0
+          },
+          "linescore": [
+            "16",
+            "34",
+            "23",
+            "32"
+          ],
+          "points": 105
+        }
+      },
+      "officials": [
+        "Tony Brothers",
+        "JB DeRosa",
+        "Derrick Collins",
+        "Ed Malloy"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9360,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-26T23:30:00.000Z",
+        "end": "2021-05-27T02:14:00.000Z",
+        "duration": "2:26"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Madison Square Garden",
+        "city": "New York",
+        "state": "NY",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 0,
+            "loss": 3
+          },
+          "linescore": [
+            "27",
+            "30",
+            "18",
+            "17"
+          ],
+          "points": 92
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 3,
+            "loss": 0
+          },
+          "linescore": [
+            "20",
+            "24",
+            "32",
+            "25"
+          ],
+          "points": 101
+        }
+      },
+      "officials": [
+        "Rodney Mott",
+        "Scott Wall",
+        "Tom Washington",
+        "David Guthrie"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9364,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-28T23:00:00.000Z",
+        "end": "2021-05-29T01:38:00.000Z",
+        "duration": "2:23"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 3,
+            "loss": 0
+          },
+          "linescore": [
+            "31",
+            "13",
+            "28",
+            "22"
+          ],
+          "points": 94
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 0,
+            "loss": 3
+          },
+          "linescore": [
+            "29",
+            "29",
+            "28",
+            "19"
+          ],
+          "points": 105
+        }
+      },
+      "officials": [
+        "Pat Fraher",
+        "John Goble",
+        "Mitchell Ervin",
+        "Tyler Ford"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9369,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-05-30T17:00:00.000Z",
+        "end": "2021-05-30T19:29:00.000Z",
+        "duration": "2:20"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 3,
+            "loss": 0
+          },
+          "linescore": [
+            "26",
+            "23",
+            "22",
+            "25"
+          ],
+          "points": 96
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 0,
+            "loss": 3
+          },
+          "linescore": [
+            "25",
+            "28",
+            "35",
+            "25"
+          ],
+          "points": 113
+        }
+      },
+      "officials": [
+        "Scott Foster",
+        "Bill Kennedy",
+        "Mark Lindsay"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9377,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-02T23:30:00.000Z",
+        "end": "2021-06-03T02:13:00.000Z",
+        "duration": "2:22"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Madison Square Garden",
+        "city": "New York",
+        "state": "NY",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 0,
+            "loss": 3
+          },
+          "linescore": [
+            "21",
+            "31",
+            "22",
+            "29"
+          ],
+          "points": 103
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 3,
+            "loss": 0
+          },
+          "linescore": [
+            "21",
+            "26",
+            "15",
+            "27"
+          ],
+          "points": 89
+        }
+      },
+      "officials": [
+        "JB DeRosa",
+        "Courtney Kirkland",
+        "Brian Forte",
+        "Kane Fitzgerald"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9389,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-06",
+        "end": null,
+        "duration": null
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": null,
+        "short": 1,
+        "long": "Scheduled"
+      },
+      "periods": {
+        "current": 0,
+        "total": 4,
+        "endOfPeriod": null
+      },
+      "arena": {
+        "name": null,
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 0,
+            "loss": 3
+          },
+          "linescore": [
+            "0"
+          ],
+          "points": null
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 3,
+            "loss": 0
+          },
+          "linescore": [
+            "0"
+          ],
+          "points": null
+        }
+      },
+      "officials": [],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9410,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-06T17:00:00.000Z",
+        "end": "2021-06-06T19:42:00.000Z",
+        "duration": "2:31"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 27,
+          "name": "Philadelphia 76ers",
+          "nickname": "76ers",
+          "code": "PHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "42",
+            "32",
+            "25",
+            "29"
+          ],
+          "points": 128
+        },
+        "home": {
+          "win": 49,
+          "loss": 23,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "27",
+            "27",
+            "29",
+            "41"
+          ],
+          "points": 124
+        }
+      },
+      "officials": [
+        "James Capers",
+        "Tom Washington",
+        "Derrick Collins",
+        "Ben Taylor"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9415,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-08T23:30:00.000Z",
+        "end": "2021-06-09T02:18:00.000Z",
+        "duration": "2:27"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 27,
+          "name": "Philadelphia 76ers",
+          "nickname": "76ers",
+          "code": "PHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "20",
+            "35",
+            "29",
+            "18"
+          ],
+          "points": 102
+        },
+        "home": {
+          "win": 49,
+          "loss": 23,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "33",
+            "24",
+            "34",
+            "27"
+          ],
+          "points": 118
+        }
+      },
+      "officials": [
+        "Tony Brothers",
+        "Scott Foster",
+        "Ken Mauer",
+        "Derrick Collins"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9418,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-11T23:30:00.000Z",
+        "end": "2021-06-12T02:24:00.000Z",
+        "duration": "2:34"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 27,
+          "name": "Philadelphia 76ers",
+          "nickname": "76ers",
+          "code": "PHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 49,
+          "loss": 23,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "28",
+            "33",
+            "34",
+            "32"
+          ],
+          "points": 127
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "20",
+            "36",
+            "19",
+            "36"
+          ],
+          "points": 111
+        }
+      },
+      "officials": [
+        "Courtney Kirkland",
+        "Zach Zarba",
+        "Karl Lane",
+        "Kevin Scott"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9422,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-14T23:30:00.000Z",
+        "end": "2021-06-15T02:18:00.000Z",
+        "duration": "2:33"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 27,
+          "name": "Philadelphia 76ers",
+          "nickname": "76ers",
+          "code": "PHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 49,
+          "loss": 23,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "28",
+            "34",
+            "20",
+            "18"
+          ],
+          "points": 100
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "20",
+            "29",
+            "31",
+            "23"
+          ],
+          "points": 103
+        }
+      },
+      "officials": [
+        "John Goble",
+        "Curtis Blair",
+        "Josh Tiven",
+        "Karl Lane"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9451,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-16T23:30:00.000Z",
+        "end": "2021-06-17T02:31:00.000Z",
+        "duration": "2:40"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 27,
+          "name": "Philadelphia 76ers",
+          "nickname": "76ers",
+          "code": "PHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "24",
+            "16",
+            "29",
+            "40"
+          ],
+          "points": 109
+        },
+        "home": {
+          "win": 49,
+          "loss": 23,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "38",
+            "24",
+            "25",
+            "19"
+          ],
+          "points": 106
+        }
+      },
+      "officials": [
+        "Sean Corbin",
+        "Bill Kennedy",
+        "David Guthrie",
+        "Eric Lewis"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9428,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-18T23:30:00.000Z",
+        "end": "2021-06-19T02:21:00.000Z",
+        "duration": "2:36"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 27,
+          "name": "Philadelphia 76ers",
+          "nickname": "76ers",
+          "code": "PHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 49,
+          "loss": 23,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "22",
+            "25",
+            "33",
+            "24"
+          ],
+          "points": 104
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "29",
+            "22",
+            "25",
+            "23"
+          ],
+          "points": 99
+        }
+      },
+      "officials": [
+        "Scott Foster",
+        "Pat Fraher",
+        "Ben Taylor",
+        "James Williams"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9430,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-21T00:00:00.000Z",
+        "end": "2021-06-21T02:37:00.000Z",
+        "duration": "2:35"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 27,
+          "name": "Philadelphia 76ers",
+          "nickname": "76ers",
+          "code": "PHI",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "25",
+            "23",
+            "28",
+            "27"
+          ],
+          "points": 103
+        },
+        "home": {
+          "win": 49,
+          "loss": 23,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "28",
+            "18",
+            "25",
+            "25"
+          ],
+          "points": 96
+        }
+      },
+      "officials": [
+        "James Capers",
+        "Courtney Kirkland",
+        "Sean Wright",
+        "Kane Fitzgerald"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9461,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-24T00:30:00.000Z",
+        "end": "2021-06-24T02:52:00.000Z",
+        "duration": "2:19"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Fiserv Forum",
+        "city": "Milwaukee",
+        "state": "WI",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 21,
+          "name": "Milwaukee Bucks",
+          "nickname": "Bucks",
+          "code": "MIL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "25",
+            "29",
+            "34",
+            "28"
+          ],
+          "points": 116
+        },
+        "home": {
+          "win": 46,
+          "loss": 26,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "28",
+            "31",
+            "26",
+            "28"
+          ],
+          "points": 113
+        }
+      },
+      "officials": [
+        "Zach Zarba",
+        "Eric Lewis",
+        "Tyler Ford"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9462,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-26T00:30:00.000Z",
+        "end": "2021-06-26T02:59:00.000Z",
+        "duration": "2:18"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Fiserv Forum",
+        "city": "Milwaukee",
+        "state": "WI",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 21,
+          "name": "Milwaukee Bucks",
+          "nickname": "Bucks",
+          "code": "MIL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "28",
+            "17",
+            "18",
+            "28"
+          ],
+          "points": 91
+        },
+        "home": {
+          "win": 46,
+          "loss": 26,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "34",
+            "43",
+            "26",
+            "22"
+          ],
+          "points": 125
+        }
+      },
+      "officials": [
+        "Scott Foster",
+        "Pat Fraher",
+        "Courtney Kirkland"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9463,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-28T00:30:00.000Z",
+        "end": "2021-06-28T02:57:00.000Z",
+        "duration": "2:25"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 21,
+          "name": "Milwaukee Bucks",
+          "nickname": "Bucks",
+          "code": "MIL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 46,
+          "loss": 26,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "27",
+            "29",
+            "27",
+            "30"
+          ],
+          "points": 113
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "32",
+            "24",
+            "29",
+            "17"
+          ],
+          "points": 102
+        }
+      },
+      "officials": [
+        "Marc Davis",
+        "Sean Wright",
+        "Kevin Scott"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9464,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-06-30T00:30:00.000Z",
+        "end": "2021-06-30T02:52:00.000Z",
+        "duration": "2:20"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 21,
+          "name": "Milwaukee Bucks",
+          "nickname": "Bucks",
+          "code": "MIL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 46,
+          "loss": 26,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "22",
+            "16",
+            "24",
+            "26"
+          ],
+          "points": 88
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "25",
+            "26",
+            "36",
+            "23"
+          ],
+          "points": 110
+        }
+      },
+      "officials": [
+        "James Capers",
+        "Tom Washington",
+        "Josh Tiven"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9465,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-07-02T00:30:00.000Z",
+        "end": "2021-07-02T02:57:00.000Z",
+        "duration": "2:25"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Fiserv Forum",
+        "city": "Milwaukee",
+        "state": "WI",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 21,
+          "name": "Milwaukee Bucks",
+          "nickname": "Bucks",
+          "code": "MIL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "22",
+            "34",
+            "22",
+            "34"
+          ],
+          "points": 112
+        },
+        "home": {
+          "win": 46,
+          "loss": 26,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "36",
+            "29",
+            "26",
+            "32"
+          ],
+          "points": 123
+        }
+      },
+      "officials": [
+        "Tony Brothers",
+        "David Guthrie",
+        "James Williams"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9466,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-07-04T00:30:00.000Z",
+        "end": "2021-07-04T02:55:00.000Z",
+        "duration": "2:23"
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 21,
+          "name": "Milwaukee Bucks",
+          "nickname": "Bucks",
+          "code": "MIL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png"
+        },
+        "home": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 46,
+          "loss": 26,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "28",
+            "19",
+            "44",
+            "27"
+          ],
+          "points": 118
+        },
+        "home": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "24",
+            "19",
+            "29",
+            "35"
+          ],
+          "points": 107
+        }
+      },
+      "officials": [
+        "Zach Zarba",
+        "Eric Lewis",
+        "Sean Wright"
+      ],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 9467,
+      "league": "standard",
+      "season": 2020,
+      "date": {
+        "start": "2021-07-06T00:30:00.000Z",
+        "end": null,
+        "duration": null
+      },
+      "stage": 4,
+      "status": {
+        "clock": null,
+        "halftime": null,
+        "short": 1,
+        "long": "Scheduled"
+      },
+      "periods": {
+        "current": 0,
+        "total": 4,
+        "endOfPeriod": null
+      },
+      "arena": {
+        "name": null,
+        "city": null,
+        "state": null,
+        "country": null
+      },
+      "teams": {
+        "visitors": {
+          "id": 1,
+          "name": "Atlanta Hawks",
+          "nickname": "Hawks",
+          "code": "ATL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/e/ee/Hawks_2016.png"
+        },
+        "home": {
+          "id": 21,
+          "name": "Milwaukee Bucks",
+          "nickname": "Bucks",
+          "code": "MIL",
+          "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 41,
+          "loss": 31,
+          "series": {
+            "win": 1,
+            "loss": 2
+          },
+          "linescore": [
+            "0"
+          ],
+          "points": null
+        },
+        "home": {
+          "win": 46,
+          "loss": 26,
+          "series": {
+            "win": 2,
+            "loss": 1
+          },
+          "linescore": [
+            "0"
+          ],
+          "points": null
+        }
+      },
+      "officials": [],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    }
+  ]
+}
 
 // {
 //     "player": {
@@ -49479,7 +57628,6 @@ let game_api_data =
 //     stats = {}
 // };
 
-// game_api_data= []
 
 
 let seasons = {};
