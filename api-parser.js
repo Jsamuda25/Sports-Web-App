@@ -57628,18 +57628,15 @@ let game_api_data = {
 //     stats = {}
 // };
 
-
-
 let seasons = {};
 
 for (game of player_api_data.response) {
-  let season = game_api_data.response.find(game.game.id)
-  if(!season in seasons) {
-    let season = game_api_data.response.find(game.game.id).season;
-    seasons.push({[season]: {year: season}});
+  let season = game_api_data.response.find((x) => (x.id == game.game.id)).season;
+  if(!(seasons.hasOwnProperty(season))) {
+    seasons[season] = {players: {}};
   }
 
-  if(!game.player.id in seasons[season]) {
+  if(!(seasons[season].hasOwnProperty(game.player.id))) {
     // if player data for the season does not exist, create player 
     seasons[season][game.player.id] = {
       id: game.player.id,
@@ -57652,8 +57649,8 @@ for (game of player_api_data.response) {
       pos: game.pos          
     };
   }
-
-  if(!points in players[game.player.id]) {
+  console.log(seasons)
+  if(!(points in players[game.player.id])) {
 
     // Initialize player stats in the season
     seasons[season][game.player.id].stats = {};
