@@ -49464,6 +49464,21 @@ let player_api_data =
 //     "comment": null
 //   }
 
+// player = {id: {
+//     id: 1068,
+//     firstname: John,
+//     lastname: Wall,
+//     gamesplayed: 100,
+//     team: {
+//         name: was...,
+//         .
+//         .
+//         .
+//     }
+//     stats = {}
+// };
+
+
 let players = {};
 
 for (game of player_api_data.response) {
@@ -49475,9 +49490,13 @@ for (game of player_api_data.response) {
             gamesplayed: 1,
             team: game.team
         }
+        players[game.player.id].stats = {
+            pos: game.pos,            
+        }
     }
-    if(points in players[game.player.id]) {
-        
+    if(!points in players[game.player.id]) {
+        players[game.player.id].points = game.points;
+        players[game.player.id].
     }
 
 }
