@@ -29,7 +29,7 @@ const { MongoClient } = require("mongodb");
 
 // Replace the uri string with your connection string.
 const uri =
-  "mongodb://localhost:27017";
+"mongodb+srv://adminUser:123@cluster0.tililof.mongodb.net/test";
 
 const client = new MongoClient(uri);
 app.locals.client = client;  // access the db client in any route using 'req.app.locals.client'
@@ -49,4 +49,4 @@ async function run() {
     await client.close();
   }
 }
-// run().catch(console.dir);
+run().catch(console.dir);
