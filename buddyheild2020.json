@@ -1,12 +1,4 @@
-{
-    "get": "players\/statistics",
-    "parameters": {
-        "id": "236",
-        "season": "2020"
-    },
-    "errors": [],
-    "results": 75,
-    "response": [
+[
         {
             "player": {
                 "id": 236,
@@ -2933,4 +2925,3 @@
             "comment": null
         }
     ]
-}
