@@ -57573,7 +57573,7 @@ let game_api_data = {
     }
   ]
 }
-
+ 
 // {
 //     "player": {
 //       "id": 1868,
@@ -57631,9 +57631,12 @@ let game_api_data = {
 let seasons = {};
 
 for (game of player_api_data.response) {
-  let season = game_api_data.response.find((x) => (x.id == game.game.id)).season;
+  let game_api = game_api_data.response.find((x) => (x.id == game.game.id))
+  if(game_api == undefined) continue;
+  let season = game_api.season;
+
   if(!(seasons.hasOwnProperty(season))) {
-    seasons[season] = {players: {}};
+    seasons[season] = {year: {}};
   }
 
   if(!(seasons[season].hasOwnProperty(game.player.id))) {
@@ -57642,60 +57645,58 @@ for (game of player_api_data.response) {
       id: game.player.id,
       firstname: game.player.firstname,
       lastname: game.player.lastname,
-      gamesplayed: 1,
+      gamesplayed: 0,
       team: game.team
     };
     seasons[season][game.player.id].stats = {
-      pos: game.pos          
+      pos: game.pos,
+      points: game.points,
+      fgm: game.fgm,
+      fga: game.fga,
+      ftm: game.ftm,
+      fta: game.fta,
+      tpm: game.tpm,
+      tpa: game.tpa,
+      offReb: game.offReb,
+      defReb: game.defReb,
+      totReb: game.totReb,
+      assists: game.assists,
+      pFouls: game.pFouls,
+      steals: game.steals,
+      turnovers: game.turnovers,
+      blocks: game.blocks,
     };
+    
+    seasons[season][game.player.id].stats.ftp = Number(game.ftp);
+    seasons[season][game.player.id].stats.fgp = Number(game.fgp);
+    seasons[season][game.player.id].stats.tpp = Number(game.tpp);
+    seasons[season][game.player.id].stats.plusMinus = Number(game.plusMinus);
   }
-  console.log(seasons)
-  if(!(points in players[game.player.id])) {
+  ++seasons[season][game.player.id].gamesplayed;
 
-    // Initialize player stats in the season
-    seasons[season][game.player.id].stats = {};
-    seasons[season][game.player.id].stats.points = game.points;
-    seasons[season].stats.fgm = game.fgm;
-    seasons[season].stats.fga = game.fga;
-    seasons[season].stats.fgp = game.fgp;
-    seasons[season].stats.ftm = game.ftm;
-    seasons[season].stats.fta = game.fta;
-    seasons[season].stats.ftp = game.ftp;
-    seasons[season].stats.tpm = game.tpm;
-    seasons[season].stats.tpa = game.tpa;
-    seasons[season].stats.tpp = game.tpp;
-    seasons[season].stats.offReb = game.offReb;
-    seasons[season].stats.defReb = game.defReb;
-    seasons[season].stats.totReb = game.totReb;
-    seasons[season].stats.assists = game.assists;
-    seasons[season].stats.pFouls = game.pFouls;
-    seasons[season].stats.steals = game.steals;
-    seasons[season].stats.turnovers = game.turnovers;
-    seasons[season].stats.blocks = game.blocks;
-    seasons[season].stats.plusMinus = game.plusMinus;
-  }
-  else {
+  if(seasons[season][game.player.id].gamesplayed !== 1) {
     // Update averages with formula (prevPoints * (gameplayed -1) + newPoints) / gamesplayed
     let player = seasons[season][game.player.id]
     seasons[season][game.player.id].stats.points = (player.stats.points * (player.gamesplayed-1) + game.points) / player.gamesplayed;
-    seasons[season].stats.fgm = (player.stats.fgm * (player.gamesplayed-1) + game.fgm) / player.gamesplayed;
-    seasons[season].stats.fga = (player.stats.fga * (player.gamesplayed-1) + game.fga) / player.gamesplayed;
-    seasons[season].stats.fgp = (player.stats.fgp * (player.gamesplayed-1) + game.fgp) / player.gamesplayed;
-    seasons[season].stats.ftm = (player.stats.ftm * (player.gamesplayed-1) + game.ftm) / player.gamesplayed;
-    seasons[season].stats.fta = (player.stats.fta * (player.gamesplayed-1) + game.fta) / player.gamesplayed;
-    seasons[season].stats.ftp = (player.stats.ftp * (player.gamesplayed-1) + game.ftp) / player.gamesplayed;
-    seasons[season].stats.tpm = (player.stats.tpm * (player.gamesplayed-1) + game.tpm) / player.gamesplayed;
-    seasons[season].stats.tpa = (player.stats.tpa * (player.gamesplayed-1) + game.tpa) / player.gamesplayed;
-    seasons[season].stats.tpp = (player.stats.tpp * (player.gamesplayed-1) + game.tpp) / player.gamesplayed;
-    seasons[season].stats.offReb = (player.stats.offReb * (player.gamesplayed-1) + game.offReb) / player.gamesplayed;
-    seasons[season].stats.defReb = (player.stats.defReb * (player.gamesplayed-1) + game.defReb) / player.gamesplayed;
-    seasons[season].stats.totReb = (player.stats.totReb * (player.gamesplayed-1) + game.totReb) / player.gamesplayed;
-    seasons[season].stats.assists = (player.stats.assists * (player.gamesplayed-1) + game.assists) / player.gamesplayed;
-    seasons[season].stats.pFouls = (player.stats.pFouls * player.gamesplayed-1 + game.pFouls) / player.gamesplayed;
-    seasons[season].stats.steals = (player.stats.steals * (player.gamesplayed-1) + game.steals) / player.gamesplayed;
-    seasons[season].stats.turnovers = (player.stats.turnovers * (player.gamesplayed-1) + game.turnovers) / player.gamesplayed;
-    seasons[season].stats.blocks = (player.stats.blocks * (player.gamesplayed-1) + game.blocks) / player.gamesplayed;
-    seasons[season].stats.plusMinus = (player.stats.plusMinus * (player.gamesplayed-1) + game.plusMinus) / player.gamesplayed;
+    seasons[season][game.player.id].stats.fgm = (player.stats.fgm * (player.gamesplayed-1) + game.fgm) / player.gamesplayed;
+    seasons[season][game.player.id].stats.fga = (player.stats.fga * (player.gamesplayed-1) + game.fga) / player.gamesplayed;
+    seasons[season][game.player.id].stats.fgp = (player.stats.fgp * (player.gamesplayed-1) + Number(game.fgp)) / player.gamesplayed;
+    seasons[season][game.player.id].stats.ftm = (player.stats.ftm * (player.gamesplayed-1) + game.ftm) / player.gamesplayed;
+    seasons[season][game.player.id].stats.fta = (player.stats.fta * (player.gamesplayed-1) + game.fta) / player.gamesplayed;
+    seasons[season][game.player.id].stats.ftp = (player.stats.ftp * (player.gamesplayed-1) + Number(game.ftp)) / player.gamesplayed;
+    seasons[season][game.player.id].stats.tpm = (player.stats.tpm * (player.gamesplayed-1) + game.tpm) / player.gamesplayed;
+    seasons[season][game.player.id].stats.tpa = (player.stats.tpa * (player.gamesplayed-1) + game.tpa) / player.gamesplayed;
+    seasons[season][game.player.id].stats.tpp = (player.stats.tpp * (player.gamesplayed-1) + Number(game.tpp)) / player.gamesplayed;
+    seasons[season][game.player.id].stats.offReb = (player.stats.offReb * (player.gamesplayed-1) + game.offReb) / player.gamesplayed;
+    seasons[season][game.player.id].stats.defReb = (player.stats.defReb * (player.gamesplayed-1) + game.defReb) / player.gamesplayed;
+    seasons[season][game.player.id].stats.totReb = (player.stats.totReb * (player.gamesplayed-1) + game.totReb) / player.gamesplayed;
+    seasons[season][game.player.id].stats.assists = (player.stats.assists * (player.gamesplayed-1) + game.assists) / player.gamesplayed;
+    seasons[season][game.player.id].stats.pFouls = (player.stats.pFouls * player.gamesplayed-1 + game.pFouls) / player.gamesplayed;
+    seasons[season][game.player.id].stats.steals = (player.stats.steals * (player.gamesplayed-1) + game.steals) / player.gamesplayed;
+    seasons[season][game.player.id].stats.turnovers = (player.stats.turnovers * (player.gamesplayed-1) + game.turnovers) / player.gamesplayed;
+    seasons[season][game.player.id].stats.blocks = (player.stats.blocks * (player.gamesplayed-1) + game.blocks) / player.gamesplayed;
+    seasons[season][game.player.id].stats.plusMinus = (player.stats.plusMinus * (player.gamesplayed-1) + Number(game.plusMinus)) / player.gamesplayed;
   }
 }
 
+console.log(seasons["2020"]);
