@@ -49478,25 +49478,60 @@ let player_api_data =
 //     stats = {}
 // };
 
+// game_api_data= []
 
-let players = {};
+
+let seasons = {
+  2020: {
+    year: 2020
+  }};
+
+// let players = {};
+
 
 for (game of player_api_data.response) {
-    if(!game.player.id in players) {
-        players[game.player.id] = {
-            id: game.player.id,
-            firstname: game.player.firstname,
-            lastname: game.player.lastname,
-            gamesplayed: 1,
-            team: game.team
-        }
-        players[game.player.id].stats = {
-            pos: game.pos,            
-        }
-    }
-    if(!points in players[game.player.id]) {
-        players[game.player.id].points = game.points;
-        players[game.player.id].
-    }
+  let season = game_api_data.response.find(game.game.id)
+  if(!season in seasons) {
+    let season = game_api_data.response.find(game.game.id).season;
+    seasons.push({[season]: {year: season}});
+  }
 
+  if(!game.player.id in seasons[season]) {
+    seasons[season][game.player.id] = {
+      id: game.player.id,
+      firstname: game.player.firstname,
+      lastname: game.player.lastname,
+      gamesplayed: 1,
+      team: game.team
+    };
+    seasons[season][game.player.id].stats = {
+      pos: game.pos          
+    };
+  }
+
+  if(!points in players[game.player.id]) {
+    seasons[season][game.player.id].points = game.points;
+    seasons[season].fgm = game.fgm;
+    seasons[season].fga = game.fga;
+    seasons[season].fgp = game.fgp;
+    seasons[season].ftm = game.ftm;
+    seasons[season].fta = game.fta;
+    seasons[season].ftp = game.ftp;
+    seasons[season].tpm = game.tpm;
+    seasons[season].tpa = game.tpa;
+    seasons[season].tpp = game.tpp;
+    seasons[season].offReb = game.offReb;
+    seasons[season].defReb = game.defReb;
+    seasons[season].totReb = game.totReb;
+    seasons[season].assists = game.assists;
+    seasons[season].pFouls = game.pFouls;
+    seasons[season].steals = game.steals;
+    seasons[season].turnovers = game.turnovers;
+    seasons[season].blocks = game.blocks;
+    seasons[season].plusMinus = game.plusMinus;
+  }
+  else {
+    
+  }
 }
+
