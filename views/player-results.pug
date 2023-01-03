@@ -1,0 +1,17 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Trivia
+        link(rel='stylesheet', href='/stylesheets/home.css')
+        script(src='/javascripts/navbar.js' defer)
+    body
+        header
+            include navbar.pug
+
+        each player in players
+            img(src=player.team.logo, alt=player.team.name, width="20px")
+            a#link(href="player/"+ player._id style="color: black;")= player.firstname + " " + player.lastname + " ("+player.year+")"
+            br
+            br

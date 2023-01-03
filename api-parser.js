@@ -59,31 +59,32 @@ let MongoClient = mongo.MongoClient;
 
 let player_api_data = JSON.parse(fs.readFileSync("player_api_data.json"));
 let game_api_data = JSON.parse(fs.readFileSync("game_api_data.json"));
+// let player_api_data = JSON.parse(fs.readFileSync("hawks2019.json"));
+// let game_api_data = JSON.parse(fs.readFileSync("gamesHawks2019.json"));
 
-let seasons = {};
+let players = {};
+
 // add year property to player json instead of in a separate array
 
 for (game of player_api_data.response) {
-  if(game.min == null || game.min == "0:00") continue;
+  if(game.min == null || game.min == "0:00") continue; // if player DNP'd, skip 
 
-  let game_api = game_api_data.response.find((x) => (x.id == game.game.id))
+
+  let game_api = game_api_data.response.find((x) => (x.id == game.game.id))    // find the specific game in question within the API response
   if(game_api == undefined) continue;
-  let season = game_api.season;
+  let season = "" + game_api.season; // store season in a variable (season is the year)
 
-  if(!(seasons.hasOwnProperty(season))) {
-    seasons[season] = {year: {}};
-  }
-
-  if(!(seasons[season].hasOwnProperty(game.player.id))) {
-    seasons[season][game.player.id] = {
+  if(!(players.hasOwnProperty(game.player.id) && players[game.player.id].year == season )) { // if player with same id and season played does not exist....
+    players[game.player.id] = {
       id: game.player.id,
       firstname: game.player.firstname,
       lastname: game.player.lastname,
+      year: season,
       gamesplayed: 0,
       team: game.team,
       pos: game.pos
     };
-    seasons[season][game.player.id].stats = {
+    players[game.player.id].stats = {
       points: game.points,
       fgm: game.fgm,
       fga: game.fga,
@@ -104,12 +105,12 @@ for (game of player_api_data.response) {
       blocks: game.blocks,
       plusMinus: Number(game.plusMinus)
     };
-    ++seasons[season][game.player.id].gamesplayed;
+    ++players[game.player.id].gamesplayed;
   } else {
-    ++seasons[season][game.player.id].gamesplayed;
+    ++players[game.player.id].gamesplayed;
     
     // Update averages with formula (prevPoints * (gameplayed -1) + newPoints) / gamesplayed
-    let player = seasons[season][game.player.id];
+    let player = players[game.player.id];
     let stats = {
       points: (player.stats.points * (player.gamesplayed-1) + game.points) / player.gamesplayed,
       fgm: (player.stats.fgm * (player.gamesplayed-1) + game.fgm) / player.gamesplayed,
@@ -131,26 +132,27 @@ for (game of player_api_data.response) {
       blocks: (player.stats.blocks * (player.gamesplayed-1) + game.blocks) / player.gamesplayed,
       plusMinus: (player.stats.plusMinus * (player.gamesplayed-1) + Number(game.plusMinus)) / player.gamesplayed
     };
-    seasons[season][game.player.id].stats = stats;  
+    players[game.player.id].stats = stats;  
   }
 }
 
-console.log(seasons["2020"]);
+console.log(players);
 
 
 MongoClient.connect("mongodb+srv://adminUser:123@cluster0.tililof.mongodb.net/test", { useNewUrlParser: true }, function(err, client) {
   if (err) throw err;
   let db = client.db("nba_info");
   // Clear player_data collection
-  db.dropDatabase("player_data", function(err, delOK) {
-    // if (err) throw err;
-    if (delOK) console.log("Collection deleted");
-  });
+  // db.dropDatabase("player_data", function(err, delOK) {
+  //   // if (err) throw err;
+  //   if (delOK) console.log("Collection deleted");
 
-  // Insert player_data
-  db.collection("player_data").insertMany(Object.values(seasons["2020"]), function(err, res) {
-    if (err) throw err;
-    console.log("Number of documents inserted: " + res.insertedCount);
-    process.exit();
-  });
+    // Insert player_data
+    db.collection("player_data").insertMany(Object.values(players), function(err, res) {
+      if (err) throw err;
+      console.log("Number of documents inserted: " + res.insertedCount);
+      process.exit();
+    });
+  // });
+
 });
