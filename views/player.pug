@@ -9,7 +9,31 @@ html(lang="en")
     body
         header
             include navbar.pug
+        
+        img(src=player.team.logo, alt=player.team.name, width="50px")
+
         h1= player.firstname + " " + player.lastname
         h2= "Year: " + player.year
         h2= "Position: " + player.pos
-        h2= "Team: " + player.team.name
+        h2= "Team: " + player.team.name + " (" + player.team.code + ")"
+        h2= "Games Played: " + player.gamesplayed
+        h2= "Stats:"
+        div(style="margin-left: 20px;")
+            h4= "Points (Average): " + player.stats.points.toFixed(3)
+            h4= "Field Goals Made (Average): " + player.stats.fgm .toFixed(3)
+            h4= "Field Goals Attempted (Average): " + player.stats.fga.toFixed(3)
+            h4= "Field Goal Percentage: " + player.stats.fgp.toFixed(3)
+            h4= "Free Throws Made (Average): " + player.stats.ftm.toFixed(3)
+            h4= "Free Throws Attempted (Average): " + player.stats.fta.toFixed(3)
+            h4= "Free Throw Percentage: " + player.stats.ftp.toFixed(3)
+            h4= "3-Pointers Made (Average): " + player.stats.tpm.toFixed(3)
+            h4= "3-Pointers Attempted (Average): " + player.stats.tpa.toFixed(3)
+            h4= "3-Point Percentage: " + player.stats.tpp.toFixed(3)
+            h4= "Offensive Rebounds (Average): " + player.stats.offReb .toFixed(3)
+            h4= "Defensive Rebounds (Average): " + player.stats.defReb.toFixed(3)
+            h4= "Total Rebounds (Average): " + player.stats.totReb.toFixed(3)
+            h4= "Assists (Average): " + player.stats.assists.toFixed(3)
+            h4= "Steals (Average): " + player.stats.steals.toFixed(3)
+            h4= "Blocks (Average): " + player.stats.blocks.toFixed(3)
+            h4= "Turnovers (Average): " + player.stats.turnovers.toFixed(3)
+            h4= "Plus Minus (Average): " + player.stats.plusMinus.toFixed(3)

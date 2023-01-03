@@ -1,4 +1,5 @@
 const express = require('express');
+let ObjectId = require('mongodb').ObjectId;
 
 let router = express.Router()
 router.use(express.json());
@@ -14,6 +15,23 @@ router.get("/players", getPlayers);
 // Get player from database based on id
 function getPlayer(req, res) {
     let id = req.params.id;
+	req.app.locals.db.collection("player_data").findOne({_id: new ObjectId(id)}, function(err, player){
+		if(err){
+			console.log("Server Error");
+			res.sendStatus(500);
+			return;
+		}
+
+		if(!player){
+			console.log("No Match!")
+			res.status(404)
+			res.send("No match!");
+			return;
+		}
+		else{
+			res.status(200).render("player", {player: player});
+		}
+	});
 }
 
 
