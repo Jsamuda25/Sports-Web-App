@@ -145,9 +145,35 @@ let team_input = JSON.parse(fs.readFileSync("celtics2019.json"));
 console.log(team_input);
 console.log(team_input.parameters.id);
 
-//identify team name based on team id
+let team = {};
 
-//if()
+//identify team name based on team id in the Rapid API database
+// for example, an end point with team id 2 is the Boston Celtics
+if(team_input.parameters.id == 1){
+  team[team_input.parameters.id].teamId = 1;
+  team[team_input.parameters.id].teamName = "Atlanta Hawks"; 
+}
+
+else if(team_input.parameters.id == 2){
+  team[team_input.parameters.id].teamId = 2;
+  team[team_input.parameters.id].teamName = "Boston Celtics"; 
+}
+
+else if(team_input.parameters.id == 4){
+  team[team_input.parameters.id].teamId = 4;
+  team[team_input.parameters.id].teamName = "Brooklyn Nets";
+}
+
+else if(team_input.parameters.id == 5){
+  team[team_input.parameters.id].teamId = 5;
+  team[team_input.parameters.id].teamName = "Charlotte Hornets";
+}
+
+else if(team_input.parameters.id == 6){
+  team[team_input.parameters.id].teamId = 6;
+  team[team_input.parameters.id].teamName = "Chicago Bulls";
+}
+
 
 MongoClient.connect("mongodb+srv://adminUser:123@cluster0.tililof.mongodb.net/test", { useNewUrlParser: true }, function(err, client) {
   if (err) throw err;
