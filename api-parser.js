@@ -174,6 +174,10 @@ else if(team_input.parameters.id == 6){
   team[team_input.parameters.id].teamName = "Chicago Bulls";
 }
 
+else if(team_input.parameters.id == 7){
+  team_input[team_input.parameters.id].teamId = 7;
+  team_input[team_input.parameters.id].teamName = "Cleveland Cavaliers";
+}
 
 MongoClient.connect("mongodb+srv://adminUser:123@cluster0.tililof.mongodb.net/test", { useNewUrlParser: true }, function(err, client) {
   if (err) throw err;
