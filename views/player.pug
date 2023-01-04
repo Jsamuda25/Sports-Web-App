@@ -17,23 +17,92 @@ html(lang="en")
         h2= "Position: " + player.pos
         h2= "Team: " + player.team.name + " (" + player.team.code + ")"
         h2= "Games Played: " + player.gamesplayed
-        h2= "Stats:"
-        div(style="margin-left: 20px;")
-            h4= "Points (Average): " + player.stats.points.toFixed(3)
-            h4= "Field Goals Made (Average): " + player.stats.fgm .toFixed(3)
-            h4= "Field Goals Attempted (Average): " + player.stats.fga.toFixed(3)
-            h4= "Field Goal Percentage: " + player.stats.fgp.toFixed(3)
-            h4= "Free Throws Made (Average): " + player.stats.ftm.toFixed(3)
-            h4= "Free Throws Attempted (Average): " + player.stats.fta.toFixed(3)
-            h4= "Free Throw Percentage: " + player.stats.ftp.toFixed(3)
-            h4= "3-Pointers Made (Average): " + player.stats.tpm.toFixed(3)
-            h4= "3-Pointers Attempted (Average): " + player.stats.tpa.toFixed(3)
-            h4= "3-Point Percentage: " + player.stats.tpp.toFixed(3)
-            h4= "Offensive Rebounds (Average): " + player.stats.offReb .toFixed(3)
-            h4= "Defensive Rebounds (Average): " + player.stats.defReb.toFixed(3)
-            h4= "Total Rebounds (Average): " + player.stats.totReb.toFixed(3)
-            h4= "Assists (Average): " + player.stats.assists.toFixed(3)
-            h4= "Steals (Average): " + player.stats.steals.toFixed(3)
-            h4= "Blocks (Average): " + player.stats.blocks.toFixed(3)
-            h4= "Turnovers (Average): " + player.stats.turnovers.toFixed(3)
-            h4= "Plus Minus (Average): " + player.stats.plusMinus.toFixed(3)
+        br
+        h2= "Peformance Stats:"
+        br
+        br
+        div(style="text-align: center; margin-left: 20px;")
+            h2= "Plus Minus (Average): " + player.stats.plusMinus.toFixed(3)
+        br
+        br
+        div(class="performance-tables") 
+            div(class="stats-table" id="scoring-table")
+                table(style='width:auto', border='1')
+                    tr
+                        th#top Scoring
+                        th 
+                    tr  
+                        th Points per Game
+                        td #{player.stats.points.toFixed(3)}
+
+                    tr
+                        th Field Goals Made per Game
+                        td #{player.stats.fgm .toFixed(3)}
+                    tr
+                        th Field Goals Attempted per Game
+                        td #{player.stats.fga.toFixed(3)}
+                    tr 
+                        th Field Goal Percentage
+                        td #{player.stats.fgp.toFixed(3)}
+                    tr
+                        th Free Throws Made per Game
+                        td #{player.stats.ftm.toFixed(3)}
+                    tr
+                        th Free Throw Percentage
+                        td #{player.stats.ftp.toFixed(3)}
+                    tr
+                        th Free Throws Attempted per Game
+                        td #{player.stats.fta.toFixed(3)}
+                    tr
+                        th 3-Pointers Made per Game
+                        td #{player.stats.tpm.toFixed(3)}
+                    tr
+                        th 3-Point Percentage
+                        td #{player.stats.tpp.toFixed(3)}
+                    tr
+                        th 3-Pointers Attempted per Game
+                        td #{player.stats.tpa.toFixed(3)}
+            
+            div(class="stats-table" id="rebounding-table")
+                table(style='width:auto', border='1')
+                    tr
+                        th#top Defence and Rebounding
+                        th 
+                    tr  
+                        th Total Rebounds per Game
+                        td #{player.stats.totReb.toFixed(3)}
+
+                    tr
+                        th Offensive Rebounds per Game
+                        td #{player.stats.offReb .toFixed(3)}
+                    tr
+                        th Defensive Rebounds per Game
+                        td #{player.stats.defReb.toFixed(3)}
+                    tr
+                        th Steals per Game
+                        td #{player.stats.steals.toFixed(3)}
+                    tr 
+                        th Blocks per Game
+                        td #{player.stats.blocks.toFixed(3)}
+                    
+
+            div(class="stats-table" id="passing-table")
+                table(style='width:auto', border='1')
+                    tr
+                        th#top Passing
+                        th 
+                    tr  
+                        th Assists per Game
+                        td #{player.stats.assists.toFixed(3)}
+
+                    tr
+                        th Turnovers per Game
+                        td #{player.stats.turnovers.toFixed(3)}
+                    tr
+ 
+ 
+
+
+
+
+    

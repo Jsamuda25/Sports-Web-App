@@ -59,6 +59,8 @@ let MongoClient = mongo.MongoClient;
 
 let player_api_data = JSON.parse(fs.readFileSync("player_api_data.json"));
 let game_api_data = JSON.parse(fs.readFileSync("game_api_data.json"));
+
+
 // let player_api_data = JSON.parse(fs.readFileSync("hawks2019.json"));
 // let game_api_data = JSON.parse(fs.readFileSync("gamesHawks2019.json"));
 
@@ -138,6 +140,14 @@ for (game of player_api_data.response) {
 
 console.log(players);
 
+// parsing team stats
+let team_input = JSON.parse(fs.readFileSync("celtics2019.json"));
+console.log(team_input);
+console.log(team_input.parameters.id);
+
+//identify team name based on team id
+
+//if()
 
 MongoClient.connect("mongodb+srv://adminUser:123@cluster0.tililof.mongodb.net/test", { useNewUrlParser: true }, function(err, client) {
   if (err) throw err;
