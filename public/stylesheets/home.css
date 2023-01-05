@@ -157,3 +157,12 @@ a{
     justify-content: center;
   }
   
+
+  
+  .team-performance-tables{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+  }
+  

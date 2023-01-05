@@ -1,0 +1,20 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Trivia
+        link(rel='stylesheet', href='/stylesheets/home.css')
+        script(src='/javascripts/navbar.js' defer)
+    body
+        header
+            include navbar.pug
+        form(action="/team-stats/teams", method="get") 
+            label(for="teamName") Enter Team Name:: 
+            input(type="text", name="teamName", id="teamName")
+            br
+            label(for="season") Enter Season:      
+            input(type="number", min= 2015, max= 2022, name="season", id="season")
+            br
+            input(type="submit", value="Submit")
+            

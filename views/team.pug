@@ -1,0 +1,203 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Trivia
+        link(rel='stylesheet', href='/stylesheets/home.css')
+        script(src='/javascripts/navbar.js' defer)
+    body
+        header
+            include navbar.pug
+
+        img(src=team.logo, alt=team.name, width="50px")
+        h1= team.teamName
+        h2= team.season
+        br
+        h2= "Peformance Stats:"
+        brs
+        br
+        div(style="text-align: center; margin-left: 20px;")
+        br
+        br
+        div(class="team-performance-tables")
+            div(class="team-stats-table" id="team-totals")
+                table(style="width:auto", border='1')
+                    tr
+                        th#top Totals
+                        th 
+                    tr 
+                        th Games 
+                        td #{team.statTotals.totalGames}
+
+                    tr  
+                        th Plus Minus
+                        td #{team.statTotals.plusMinus.toFixed(2)}
+
+                    tr  
+                        th Points
+                        td #{team.statTotals.points.toFixed(2)}
+                    tr
+                        th Fast Break Points
+                        td #{team.statTotals.fastBreakPoints.toFixed(2)}
+                    tr 
+                        th Points in the Paint
+                        td #{team.statTotals.pointsInPaint.toFixed(2)}
+                    tr 
+                        th 2nd Chance Points
+                        td #{team.statTotals.secondChancePoints.toFixed(2)}
+                    tr 
+                        th Points off Turnovers
+                        td #{team.statTotals.pointsOffTurnovers.toFixed(2)}
+
+                    tr
+                        th Field Goals Made
+                        td #{team.statTotals.fgm.toFixed(2)}
+                    tr 
+                        th Field Goals Attempted
+                        td #{team.statTotals.fga.toFixed(2)}
+                    tr
+                        th Field Goal Percentage
+                        td #{team.statTotals.fgp}%
+                    tr
+                        th Free Throws Made
+                        td #{team.statTotals.ftm.toFixed(2)}
+                    tr
+                        th Free Throw Percentage
+                        td #{team.statTotals.ftp}%
+                    tr
+                        th Free Throws Attempted
+                        td #{team.statTotals.fta.toFixed(2)}
+                    tr
+                        th 3-Pointers Made
+                        td #{team.statTotals.tpm.toFixed(2)}
+                    tr
+                        th 3-Point Percentage
+                        td #{team.statTotals.tpp}%
+                    tr
+                        th 3-Pointers Attempted
+                        td #{team.statTotals.tpa.toFixed(2)}
+                    tr
+                        th Rebounds 
+                        td #{team.statTotals.totReb.toFixed(2)}
+                    tr
+                        th Offensive Rebounds
+                        td #{team.statTotals.offReb.toFixed(2)}
+                    tr 
+                        th Defensive Rebounds
+                        td #{team.statTotals.defReb.toFixed(2)}
+                    tr 
+                        th Assists
+                        td #{team.statTotals.assists.toFixed(2)}
+                    tr
+                        th Steals
+                        td #{team.statTotals.steals.toFixed(2)}
+                    tr
+                        th Blocks
+                        td #{team.statTotals.blocks.toFixed(2)}
+                    tr
+                        th Turnovers
+                        td #{team.statTotals.turnovers.toFixed(2)}
+                    tr
+                        th Personal Fouls
+                        td #{team.statTotals.pFouls.toFixed(2)}
+         
+            div(class="team-stats-table" id="team-averages")
+                table(style="width:auto", border='1')
+                    tr 
+                        th#top Averages
+                        th
+                    tr
+                        th Games 
+                        td #{team.statTotals.totalGames}
+                    tr
+                        th Plus Minus
+                        td #{team.perGameAverages.avgPlusMinus.toFixed(2)}
+                    tr
+                        th Points
+                        td #{team.perGameAverages.avgPoints.toFixed(2)}
+                    
+                    tr 
+                        th Fast Break Points
+                        td #{team.perGameAverages.avgFastBreakPoints.toFixed(2)}
+                    tr 
+                        th Points in the Paint
+                        td #{team.perGameAverages.avgPointsInPaint.toFixed(2)}
+                    tr
+                        th 2nd Chance Points
+                        td #{team.perGameAverages.avgSecondChancePoints.toFixed(2)}
+                    tr
+                        th Points off Turnovers
+                        td #{team.perGameAverages.avgPointsOffTurnovers.toFixed(2)}
+
+                    tr
+                        th Field Goals Made
+                        td #{team.perGameAverages.avgFgm.toFixed(2)}
+                    
+                    tr 
+                        th Field Goals Attempted
+                        td #{team.perGameAverages.avgFga.toFixed(2)}
+                    
+                    tr
+                        th Field Goal Percentage
+                        td #{team.perGameAverages.avgFgp.toFixed(2)}%
+                    
+                    tr 
+                        th Free Throws Made
+                        td #{team.perGameAverages.avgFtm.toFixed(2)}
+                    
+                    tr 
+                        th Free Throw Percentage
+                        td #{team.perGameAverages.avgFtp.toFixed(2)}%
+                    
+                    tr
+                        th Free Throws Attempted
+                        td #{team.perGameAverages.avgFta.toFixed(2)}
+                    
+                    tr 
+                        th 3-Pointers Made
+                        td #{team.perGameAverages.avgTpm.toFixed(2)}
+                    
+                    tr 
+                        th 3-Point Percentage
+                        td #{team.perGameAverages.avgTpp.toFixed(2)}%
+                    
+                    tr 
+                        th 3-Pointers Attempted
+                        td #{team.perGameAverages.avgTpa.toFixed(2)}
+                    
+                    tr 
+                        th Rebounds 
+                        td #{team.perGameAverages.avgTotReb.toFixed(2)}
+                    
+                    tr 
+                        th Offensive Rebounds
+                        td #{team.perGameAverages.avgOffReb.toFixed(2)}
+
+                    tr 
+                        th Defensive Rebounds
+                        td #{team.perGameAverages.avgDefReb.toFixed(2)}
+
+                    tr 
+                        th Assists
+                        td #{team.perGameAverages.avgAssists.toFixed(2)}
+
+                    tr  
+                        th Steals
+                        td #{team.perGameAverages.avgSteals.toFixed(2)}
+                    
+                    tr 
+                        th Blocks
+                        td #{team.perGameAverages.avgBlocks.toFixed(2)}
+                    
+                    tr 
+                        th Turnovers
+                        td #{team.perGameAverages.avgTurnovers.toFixed(2)}
+                    
+                    tr 
+                        th Personal Fouls
+                        td #{team.perGameAverages.avgPFouls.toFixed(2)}
+                    
+                
+
+    

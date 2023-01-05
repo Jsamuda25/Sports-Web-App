@@ -6,7 +6,7 @@
     },
     "errors": [],
     "results": 1,
-    "response": [
+    "response": 
       {
         "games": 100,
         "fastBreakPoints": 1573,
@@ -35,5 +35,4 @@
         "blocks": 512,
         "plusMinus": 344
       }
-    ]
   }

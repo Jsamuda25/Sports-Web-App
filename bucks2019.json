@@ -1,0 +1,38 @@
+{
+    "get": "teams/statistics",
+    "parameters": {
+      "id": "21",
+      "season": "2019"
+    },
+    "errors": [],
+    "results": 1,
+    "response": 
+      {
+        "games": 96,
+        "fastBreakPoints": 1613,
+        "pointsInPaint": 4530,
+        "biggestLead": 1767,
+        "secondChancePoints": 1160,
+        "pointsOffTurnovers": 1627,
+        "longestRun": 1083,
+        "points": 11181,
+        "fgm": 4043,
+        "fga": 8553,
+        "fgp": "47.3",
+        "ftm": 1784,
+        "fta": 2400,
+        "ftp": "73.8",
+        "tpm": 1311,
+        "tpa": 3700,
+        "tpp": "35.4",
+        "offReb": 886,
+        "defReb": 3937,
+        "totReb": 4823,
+        "assists": 2423,
+        "pFouls": 1975,
+        "steals": 700,
+        "turnovers": 1456,
+        "blocks": 536,
+        "plusMinus": 834
+      }
+  }
