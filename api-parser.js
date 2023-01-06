@@ -57,6 +57,10 @@ let MongoClient = mongo.MongoClient;
 //     stats = {}
 // };
 
+
+// Read data for each team in each season from api and create a object for the players and the teams
+// Use the game information to get the player stats and the team stats as well as the players for each team
+
 let player_stats_api_data = JSON.parse(fs.readFileSync("player_stats_api_data.json"));
 let game_api_data = JSON.parse(fs.readFileSync("game_api_data.json"));
 
@@ -368,22 +372,21 @@ MongoClient.connect("mongodb+srv://adminUser:123@cluster0.tililof.mongodb.net/te
   if (err) throw err;
   let db = client.db("nba_info");
   // Clear player_data collection
-  db.dropDatabase("player_data", function(err, delOK) {
-    // if (err) throw err;
-    if (delOK) console.log("Collection deleted");
+  // db.dropDatabase("player_data", function(err, delOK) {
+  //   // if (err) throw err;
+  //   if (delOK) console.log("Collection deleted");
+  // });
+  // Insert player_data
+  db.collection("player_data").insertMany(Object.values(players), function(err, res) {
     
-    db.collection("player_data").insertMany(Object.values(players), function(err, res) {
-      
+    if (err) throw err;
+    console.log("Number of documents inserted: " + res.insertedCount);
+
+    // Insert team_data
+    db.collection("team_data").insertOne(team, function(err, res) {
       if (err) throw err;
-      console.log("Number of documents inserted: " + res.insertedCount);
-  
-      // Insert team_data
-      db.collection("team_data").insertOne(team, function(err, res) {
-        if (err) throw err;
-      });
-  
       process.exit();
     });
+
   });
-  // Insert player_data
 });
