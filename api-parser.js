@@ -1,4 +1,3 @@
-const { Template } = require("ejs");
 const fs = require("fs")
 let mongo = require('mongodb');
 let MongoClient = mongo.MongoClient;
@@ -58,18 +57,14 @@ let MongoClient = mongo.MongoClient;
 //     stats = {}
 // };
 
-let player_api_data = JSON.parse(fs.readFileSync("player_api_data.json"));
+let player_stats_api_data = JSON.parse(fs.readFileSync("player_stats_api_data.json"));
 let game_api_data = JSON.parse(fs.readFileSync("game_api_data.json"));
-
-
-// let player_api_data = JSON.parse(fs.readFileSync("hawks2019.json"));
-// let game_api_data = JSON.parse(fs.readFileSync("gamesHawks2019.json"));
 
 let players = {};
 
 // add year property to player json instead of in a separate array
 
-for (game of player_api_data.response) {
+for (game of player_stats_api_data.response) {
   if(game.min == null || game.min == "0:00") continue; // if player DNP'd, skip 
 
 
@@ -77,7 +72,8 @@ for (game of player_api_data.response) {
   if(game_api == undefined) continue;
   let season = "" + game_api.season; // store season in a variable (season is the year)
 
-  if(!(players.hasOwnProperty(game.player.id) && players[game.player.id].year == season )) { // if player with same id and season played does not exist....
+  if(!(players.hasOwnProperty(game.player.id) && players[game.player.id].year == season )) {
+    // if player with same id and season played does not exist....
     players[game.player.id] = {
       id: game.player.id,
       firstname: game.player.firstname,
@@ -139,12 +135,8 @@ for (game of player_api_data.response) {
   }
 }
 
-console.log(players);
-
 // parsing team stats
 let team_input = JSON.parse(fs.readFileSync("bucks2019.json"));
-// console.log(team_input);
-// console.log(team_input.parameters.id);
 
 let team={};
 
@@ -370,28 +362,28 @@ let teamAverages = {
 
 team.statTotals= teamTotals;
 team.perGameAverages = teamAverages;
-console.log(team)
 
 
 MongoClient.connect("mongodb+srv://adminUser:123@cluster0.tililof.mongodb.net/test", { useNewUrlParser: true }, function(err, client) {
   if (err) throw err;
   let db = client.db("nba_info");
   // Clear player_data collection
-  // db.dropDatabase("player_data", function(err, delOK) {
-  //   // if (err) throw err;
-  //   if (delOK) console.log("Collection deleted");
-  // });
-    // Insert player_data
+  db.dropDatabase("player_data", function(err, delOK) {
+    // if (err) throw err;
+    if (delOK) console.log("Collection deleted");
+    
     db.collection("player_data").insertMany(Object.values(players), function(err, res) {
+      
       if (err) throw err;
       console.log("Number of documents inserted: " + res.insertedCount);
+  
+      // Insert team_data
+      db.collection("team_data").insertOne(team, function(err, res) {
+        if (err) throw err;
+      });
+  
       process.exit();
     });
-
-    // Insert team_data
-    db.collection("team_data").insertOne(team, function(err, res) {
-      if (err) throw err;
-    });
-
-
+  });
+  // Insert player_data
 });
