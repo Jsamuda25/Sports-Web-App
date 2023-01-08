@@ -12,7 +12,7 @@ const uri =
 
 // Routes
 const triviaRoutes = require('./routes/trivia');
-const lineupRoutes = require('./routes/lineup');
+const higherOrLowerRoutes = require('./routes/higher-lower');
 const teammateRoutes = require('./routes/teammates');
 const playerStatsRoute = require('./routes/player-stats')
 const teamStatsRoute = require('./routes/team-stats')
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/trivia', triviaRoutes);
-app.use('/lineup', lineupRoutes);
+app.use('/higher-lower', higherOrLowerRoutes);
 app.use('/teammates', teammateRoutes);
 app.use('/player-stats', playerStatsRoute);
 app.use('/team-stats', teamStatsRoute);
